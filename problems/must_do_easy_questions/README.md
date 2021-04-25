@@ -1,0 +1,1 @@
+[Must Do Easy Questions](https://leetcode.com/list/xix1yu51/) list from [leetcode](https://leetcode.com)
