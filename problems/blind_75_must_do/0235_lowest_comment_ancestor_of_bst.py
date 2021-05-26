@@ -1,7 +1,4 @@
 # https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
-from collections import deque
-
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
