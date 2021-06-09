@@ -18,7 +18,7 @@ class Solution:
         parentheses = []
 
         def backtracking(weave, start, end) -> None:
-            if len(weave) == 2 * n:
+            if start == n and end == n:
                 parentheses.append(weave)
                 return
 
