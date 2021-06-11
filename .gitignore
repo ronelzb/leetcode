@@ -139,3 +139,6 @@ pip-selfcheck.json
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+
+# custom
+test/
