@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/snapshot-array/
-# tags: #binary_search, #google
+# tags: #binary_search, #data_structures, #google
 class SnapshotArray:
 
     # Idea: save only new values with the current snap_id at the specified index
