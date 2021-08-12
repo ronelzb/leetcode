@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/robot-bounded-in-circle/
+# tags: #amazon, #one_pass, #graph_search
 class Solution:
     # Solution: The problem says at then end "Return true if and only if there exists a circle in the plane such that
     # the robot never leaves the circle."

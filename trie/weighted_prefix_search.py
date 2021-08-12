@@ -1,3 +1,5 @@
+# No link
+# tags: #amazon, #trie, #weigthed_tree
 # Make a data structure to insert new words with its weight
 # and get the sum of any prefix asked
 # insert("apple", 3)

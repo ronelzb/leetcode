@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/implement-trie-prefix-tree/
+# tags: #amazon, #trie, #weigthed_tree
 class TrieNode:
     def __init__(self):
         self.children = dict()

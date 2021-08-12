@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/confusing-number-ii/
+# tags: #backtracking, #dfs, #google, #numbers
 class Solution:
     # As the problem suggests, at each current number we need to check if the resulting number
     # is different than the original using the 180 degrees rule

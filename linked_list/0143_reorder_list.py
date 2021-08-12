@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/reorder-list/
+# tags: #amazon, #linked_list, #slow_fast_pointer
 # Rearrange a singly linked list 1 -> 2 -> 3 -> ... -> n-1 -> n,
 # So that it will result 1 -> n-2 -> 2 -> n-1 -> 3 -> n
 # Reverse a linked list: https://www.geeksforgeeks.org/reverse-a-linked-list/

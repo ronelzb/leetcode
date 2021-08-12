@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/word-ladder/
+# tags: #bfs, #google, #graph_search
 from collections import deque
 from typing import List
 
