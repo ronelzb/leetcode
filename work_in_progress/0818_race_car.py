@@ -19,7 +19,7 @@ class Solution:
         level = 0
 
         while queue:
-            for k in range(len(queue), 0, -1):
+            for _ in range(len(queue)):
                 position, speed = queue.popleft()
 
                 if position == target:
@@ -70,6 +70,6 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
 
-    print(sol.racecar_bottomupDP(target=3))  # 2 ("AA")
-    print(sol.racecar_bottomupDP(target=4))  # 5 ("AA")
-    print(sol.racecar_bottomupDP(target=6))  # 5 ("AAARA")
+    print(sol.racecar_BFS(target=3))  # 2 ("AA")
+    print(sol.racecar_BFS(target=4))  # 5 ("AA")
+    print(sol.racecar_BFS(target=6))  # 5 ("AAARA")
