@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/strobogrammatic-number-ii/
-# tags: #google
+# tags: #backtracking, #dfs, #google
 # A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down)
 # For example, the numbers "69", "88", and "818" are all strobogrammatic
 #
