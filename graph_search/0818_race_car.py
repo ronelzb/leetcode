@@ -6,8 +6,23 @@
 # https://leetcode.com/problems/race-car/discuss/124326/Summary-of-the-BFS-and-DP-solutions-with-intuitive-explanation
 # Best DP explanation:
 # https://leetcode.com/problems/race-car/discuss/246138/java-DP-solution-heavily-commented.
-# BFS solution time complexity: O(target * log(target)), Space complexity: O(target * log(target))
-# DP solution time complexity: O(target * log(target)), Space complexity: O(target)
+#
+# 1. BFS solution
+# We can track the car position after all possible movements of the car after n instructions
+# since for each position we have two choices: either accelerate or reverse, and
+# return smallest n such that the target has been met. To optimize naive run at O(2^n) we need
+# to memoize intermediate overlapping states, we just need to be careful of overflowing space
+# for large target positions.
+# Time complexity: O(target * log(target)), Space complexity: O(target * log(target))
+#
+# 2. DP bottom-up
+# Following @fun4LeetCode explanation: We memoize the minimum steps to get to target at each position i
+# We have 3 options at each position to get to the target:
+# i. Perfect position to get to i just accelerating (e.g: AAA), which is 1, 3, 7, 15... 2^n - 1
+# ii. Car reaches right position to i, reverse facing left and then go back to i
+# iii. Car reaches left position to i, reverse again to go back facing right and then go back to i
+# Time complexity: O(target * log(target)), Space complexity: O(target)
+
 import sys
 from collections import deque
 
