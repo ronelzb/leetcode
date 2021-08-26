@@ -1,18 +1,21 @@
 # https://leetcode.com/problems/decode-string/
 # tags: #google, #stack, #queue, #sliding_window
+#
+# There is 2 approaches to solve this problem: brackets stack or sliding window
+# I took the sliding window approach to be more efficient space complexity wise
+#
+# Also, there is a couple of edge cases we need to be aware of:
+# 1. Substring Multiplier can be over 1 digit (e.g: 10, 100).
+# 2. Nested substrings can be found one after the other
+#
+# Sliding window is doing the enqueue finding the parent substring and then doing the recursion
+# When it finishes building the substring we need to multiply it k times
+#
+# Time complexity: O(n * k_max), Space complexity: O(k_max) k_max times doing the recursion
 from collections import deque
 
 
 class Solution:
-
-    # There is 2 approaches to solve this problem: brackets stack or sliding window
-    # I took the sliding window approach to be more efficient space complexity wise
-    # Also, there is a couple of edge cases we need to be aware of:
-    # 1. Substring Multiplier can be over 1 digit (e.g: 10, 100).
-    # 2. Nested substrings can be found one after the other
-    # Sliding window is doing the enqueue finding the parent substring and then doing the recursion
-    # When it finishes building the substring we need to multiply it k times
-    # Time complexity: O(n * k_max), Space complexity: O(k_max) k_max times doing the recursion
     def decodeString(self, s: str) -> str:
         def decode_substring(mult, start, end) -> str:
             substring = ""

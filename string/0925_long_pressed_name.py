@@ -1,9 +1,11 @@
 # https://leetcode.com/problems/long-pressed-name/
 # tags: #google, #string, #two_pointers
+#
+# Classical two pointers problem where an interesting idea is to loop through
+# typed comparing each value to name[i], eventually we should've reached the end of name
+#
+# Time complexity: O(m) m=typed, Space complexity: O(1)
 class Solution:
-    # Classical two pointers problem where an interesting idea is to loop through
-    # typed comparing each value to name[i], eventually we should've reached the end of name
-    # Time complexity: O(m) m=typed, Space complexity: O(1)
     def isLongPressedName(self, name: str, typed: str) -> bool:
         n, m = len(name), len(typed)
         if m < n:

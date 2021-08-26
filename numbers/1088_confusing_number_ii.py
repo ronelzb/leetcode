@@ -1,11 +1,13 @@
 # https://leetcode.com/problems/confusing-number-ii/
 # tags: #backtracking, #dfs, #google, #numbers
+#
+# As the problem statement suggests, at each current number we need to check if the resulting number
+# is different than the original using the 180 degrees rule
+# To optimize the subsequent numbers search (backtracking) it is possible to make the next
+# confusing number using a default map with the formula: next = current_number * 10 + next_key
+#
+# Time complexity: O(n / ?), Space complexity: O(5 + recursion tree)
 class Solution:
-    # As the problem suggests, at each current number we need to check if the resulting number
-    # is different than the original using the 180 degrees rule
-    # To optimize the subsequent numbers search (backtracking) it is possible to make the next
-    # confusing number using a default map with the formula: next = current_number * 10 + next_key
-    # Time complexity: O(n / ?), Space complexity: O(5 + recursion tree)
     def confusingNumberII(self, n: int) -> int:
         valid_numbers = {0: 0, 1: 1, 6: 9, 8: 8, 9: 6}
         res = 0

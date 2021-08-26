@@ -1,5 +1,14 @@
 # https://leetcode.com/problems/implement-trie-prefix-tree/
 # tags: #amazon, #trie, #weigthed_tree
+#
+# Trie implementation:
+# Insert: will recursively drill down the trie for each letter in the visited word, those letter not found
+# will create a new key in the visited node
+# Search: Will attempt to drill down the trie until it finds the end of the word
+# Starts With: As opposite to search, this method will attempt to drill down until the end of the word queried
+#
+# Time complexity: O(n * m) n=word length - m=lookup nodes
+# Space complexity O(k * n) k=each node size - n=keys or nodes
 class TrieNode:
     def __init__(self):
         self.children = dict()

@@ -1,16 +1,18 @@
 # https://leetcode.com/problems/minimum-window-substring/
 # tags: #hash_table, #google, #sliding_window, #string, #two_pointers
+# To check if a window is valid, we use a map to store (char, count) for chars in t.
+# And use counter for the number of chars of t to be found in s.
+#
+# The key part is t_counter[s[end]]-= 1, we decrease count for each char in s found in the counter
+# At each char in s we decrease the counter, if t_counter[s[end]] > 0 we can update the total chars found
+# When the this total chars found exceeds the length of t then we slide the window to
+# a new start index where a char is available again.
+#
+# Time complexity: O(3 * m + n) => O(m + n), Space complexity: O(n)
 from collections import Counter
 
 
 class Solution:
-    # To check if a window is valid, we use a map to store (char, count) for chars in t.
-    # And use counter for the number of chars of t to be found in s.
-    # The key part is t_counter[s[end]]-= 1, we decrease count for each char in s found in the counter
-    # At each char in s we decrease the counter, if t_counter[s[end]] > 0 we can update the total chars found
-    # When the this total chars found exceeds the length of t then we slide the window to
-    # a new start index where a char is available again.
-    # Time complexity: O(3 * m + n) => O(m + n), Space complexity: O(n)
     def minWindow(self, s: str, t: str) -> str:
         t_counter = Counter(t)
         n = len(t)

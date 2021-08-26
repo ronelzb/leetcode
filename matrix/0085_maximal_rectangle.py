@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/maximal-rectangle/
 # tags: #array, #dp, #google, #matrix, #stack
+#
 # Great explanation at:
 # https://leetcode.com/problems/maximal-rectangle/discuss/29065/AC-Python-DP-solutioin-120ms-based-on-largest-rectangle-in-histogram
 # The solution is based on the
@@ -12,6 +13,7 @@
 # towards the top of the stack
 # * height[stack.pop()] is guaranteed to be the limiting height due to the stack ascending order nature
 # * w = i - 1 - stack[-1], (i - 1) represents the right boundary of the rectangle and stack[-1] is the left
+#
 # Time complexity: O(m * n), Space complexity: O(n)
 from collections import deque
 from typing import List
@@ -49,4 +51,4 @@ if __name__ == "__main__":
                                        ["1", "1", "1", "1", "1"],
                                        ["1", "0", "0", "1", "0"]]))  # 6
 
-    # print(sol.maximalRectangle(matrix=[["0", "1"], ["1", "0"]]))  # 1
+    print(sol.maximalRectangle(matrix=[["0", "1"], ["1", "0"]]))  # 1

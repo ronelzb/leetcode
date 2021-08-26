@@ -1,19 +1,21 @@
 # https://leetcode.com/problems/text-justification/
 # tags: #google, #greedy, #simulation, #string
+# Idea for the solution: The main method will manage how many words will fit in each line considering
+# at least one space between each word in the same line (greedy)
+#
+# When a line is considered full, then fill in the line considering:
+# 1. If it's one word then it is easy, the result is just that word.
+# 2. If it's the last line then the result is all words separated by a single space
+# and filling remaining with blank space.
+# 3. Otherwise we calculate the size of each space evenly and if there is a remainder we distribute an extra space
+# until it is gone
+#
+# Time complexity: O(n * maxWidth) => main method traverse words list and sub-method traverse the same list
+# Space complexity: O(maxWidth) => Space for a single line
 from typing import List
 
 
 class Solution:
-    # Idea for the solution: The main method will manage how many words will fit in each line considering
-    # at least one space between each word in the same line (greedy)
-    # When a line is considered full, then fill in the line considering:
-    # 1. If it's one word then it is easy, the result is just that word.
-    # 2. If it's the last line then the result is all words separated by a single space
-    # and filling remaining with blank space.
-    # 3. Otherwise we calculate the size of each space evenly and if there is a remainder we distribute an extra space
-    # until it is gone
-    # Time complexity: O(n * maxWidth) => main method traverse words list and sub-method traverse the same list
-    # Space complexity: O(maxWidth) => Space for a single line
     def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
         text_lines = []
         n, current_width, line_start = len(words), 0, 0
@@ -30,7 +32,6 @@ class Solution:
                 text_lines.append(last_line + " " * (maxWidth - len(last_line)))
 
             current_width += m + 1
-        print(text_lines)
         return text_lines
 
     def justify_line(self, line_words: List[str], words_width: int, max_width: int) -> str:
