@@ -1,7 +1,16 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# tags: #hash_table, #linked_list, #sliding_window, #string
+#
+# Use sliding window technique to solve this problem, using a dictionary which stores the characters in string
+# as keys and their positions as values, and keep two pointers which define the max substring.
+# Move the right pointer to scan through the string
+#
+# Optimal variant: Instead of counting each chars we will store where each char was last seen
+# Sliding window will be moving by where each last seen char thus O(1) pass
+# Be careful when getting start from max(start, char_last_seen), e.g: abba
+#
+# Optimal Time complexity: O(n), Space complexity: O(1) distinct chars seen in word
 class Solution:
-
-    # Use sliding window technique to solve this problem
     def lengthOfLongestSubstring(self, s: str) -> int:
         start, max_length = 0, 0
         counter_chars = {}
@@ -18,9 +27,6 @@ class Solution:
 
         return max_length
 
-    # Optimal variant: Instead of counting each chars we will store where each char was last seen
-    # Sliding window will be moving by where each last seen char thus O(1) pass
-    # Be careful when getting start from max(start, char_last_seen), e.g: abba
     def lengthOfLongestSubstring_optimal(self, s: str) -> int:
         start, max_length = 0, 0
         char_last_seen = {}

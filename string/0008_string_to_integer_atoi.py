@@ -1,4 +1,13 @@
 # https://leetcode.com/problems/string-to-integer-atoi/
+# tags: #string
+#
+# Use regular expression to handle the following cases:
+# 1. Discards all leading whitespaces
+# 2. Sign of the number
+# 3. Overflow
+# 4. Invalid input
+#
+# Time complexity: O(n), Space complexity: O(n) to O(2^m) m=regular expression size
 import re
 
 

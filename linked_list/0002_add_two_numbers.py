@@ -1,9 +1,11 @@
 # https://leetcode.com/problems/add-two-numbers/
 # tags: #google, #linked_list, #math, #numbers, #recursion
+#
 # The idea is to traverse both lists summing the digits at each position
 # We already have those lists in reversed order so we can go and traverse them directly using a carry
 # to keep it consistent when a sum exceeds 9
 # Dummy node at the beginning is useful to avoid extra validations
+#
 # Time complexity: O(max(l1, l2)), Space complexity: O(max(l1, l2))
 class ListNode:
     def __init__(self, val=0, next=None):

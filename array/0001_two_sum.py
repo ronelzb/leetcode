@@ -1,4 +1,12 @@
 # https://leetcode.com/problems/two-sum/
+# tags: #array, #hash_table
+#
+# The key here is that there is always only 1 pair of numbers that satisfies the condition
+# To solve this in a single pass we use the equation a = target - b, and since we know the target
+# then we can maintain a records of all previous values in the list and comparing the current value
+# To keep a record of all previous values we can use a dictionary.
+#
+# Time complexity: O(n), Space complexity: O(n)
 from typing import List
 
 

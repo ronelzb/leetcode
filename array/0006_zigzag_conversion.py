@@ -1,6 +1,15 @@
 # https://leetcode.com/problems/zigzag-conversion/
+# tags: #array, #string
+#
+# Naive solution: Convert input into zigzagged matrix and traversed it
+#
+# Optimal solution Traverse input in a zigzag way
+# https://leetcode.com/problems/zigzag-conversion/discuss/3435/If-you-are-confused-with-zigzag-patterncome-and-see!
+# https://leetcode.com/problems/zigzag-conversion/discuss/545622/Python-100-easy-understand-solution
+# Given n = numRows, we see that each cycle consists of (2 * rows - 2) elements
+#
+# Optimal Time complexity: O(n), Space complexity: O(1)
 class Solution:
-    # Naive solution: convert input into zigzagged matrix and traversed it
     def convert(self, s: str, num_rows: int) -> str:
         n, i = len(s), 0
         matrix = []
@@ -29,10 +38,6 @@ class Solution:
 
         return output
 
-    # Optimal solution Traverse input in a zigzag way
-    # https://leetcode.com/problems/zigzag-conversion/discuss/3435/If-you-are-confused-with-zigzag-patterncome-and-see!
-    # https://leetcode.com/problems/zigzag-conversion/discuss/545622/Python-100-easy-understand-solution
-    # Given n = numRows, we see that each cycle consists of (2 * rows - 2) elements
     def convert_optimal(self, s: str, num_rows: int) -> str:
         if num_rows == 1:
             return s
