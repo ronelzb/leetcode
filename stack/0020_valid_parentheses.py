@@ -1,4 +1,9 @@
 # https://leetcode.com/problems/valid-parentheses/
+# tags: #stack, #string
+#
+# Basic usage for stack implementation, also added brackets dictionary to maintain the code clean
+#
+# Time complexity: O(n), Space complexity: O(n)
 from collections import deque
 
 

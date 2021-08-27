@@ -1,17 +1,19 @@
 # https://leetcode.com/problems/next-permutation/
+# tags: #array, #two_pointers
+#
 # Idea: https://www.nayuki.io/page/next-lexicographical-permutation-algorithm
+# Condensed mathematical description:
+# 1. Find largest index i such that array[i − 1] < array[i].
+# (If no such i exists, then this is already the last permutation.)
+# 2. Find largest index j such that j ≥ i and array[j] > array[i − 1].
+# 3. Swap array[j] and array[i − 1].
+# 4. Reverse the suffix starting at array[i].
+#
+# Time complexity: O(n), Space complexity: O(1)
 from typing import List
 
 
 class Solution:
-
-    # Condensed mathematical description:
-    # 1. Find largest index i such that array[i − 1] < array[i].
-    # (If no such i exists, then this is already the last permutation.)
-    # 2. Find largest index j such that j ≥ i and array[j] > array[i − 1].
-    # 3. Swap array[j] and array[i − 1].
-    # 4. Reverse the suffix starting at array[i].
-    # def checkPermutation() -> bool:
     def nextPermutation(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -38,8 +40,6 @@ class Solution:
 
         else:
             nums.reverse()
-
-        # print(nums)
 
 
 if __name__ == "__main__":
