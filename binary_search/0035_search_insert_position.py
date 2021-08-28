@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/search-insert-position/
+# tags: #array, #binary_search
+#
+# Time complexity goal suggests to implement binary search.
+# Invariant: the desired index is between [low, high+1]
+#
+# Time complexity: O(log(n)), Space complexity: O(1)
 from typing import List
 
 
