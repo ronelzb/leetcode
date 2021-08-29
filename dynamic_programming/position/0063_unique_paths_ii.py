@@ -1,13 +1,17 @@
 # https://leetcode.com/problems/unique-paths-ii/
+# tags: #dp, #matrix
+#
+# Idea: As we require to find all the possible routes to the goal
+# we can use dfs BUT we would be recalculating some routes already visited
+# so we can solve this problems using:
+# 1. DP bottom-up using a table to count the number of possible routes
+# 2. dfs with memoization for top-down
+#
+# Time complexity: O(m + n + m * n) => O(m * n), Space complexity: O(m * n)
 from typing import List
 
 
 class Solution:
-    # Idea: As we require to find all the possible routes to the goal
-    # we can use dfs BUT we would be recalculating some routes already visited
-    # so we can solve this problems using:
-    # 1. DP bottom-up using a table to count the number of possible routes
-    # 2. dfs with memoization for top-down
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         num_paths = [[0] * n for _ in range(m)]

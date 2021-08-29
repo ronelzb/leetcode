@@ -1,11 +1,15 @@
 # https://leetcode.com/problems/subsets/
+# tags: #array, #backtracking, #dfs
+#
+# We can simply use backtracking to solve this problem
+# The only catch is to append to the unique set the current weave at the beginning of each backtracking call
+#
+# Time complexity: O(n * 2^n), Space complexity: O(2^n) due to stack trace recursion
 from typing import List
 
 
 class Solution:
-    # We can simply use backtracking to solve this problem
-    # The only catch is to append to the unique set the current weave at the beginning of each
-    # backtracking call
+
     def subsets(self, nums: List[int]) -> List[List[int]]:
         sets = []
 
@@ -22,11 +26,10 @@ class Solution:
                 backtracking(sub_list[i + 1:n], weave + [num])
 
         backtracking(nums)
-        # print(sets)
         return sets
 
 
 if __name__ == "__main__":
     sol = Solution()
 
-    sol.subsets(nums=[1, 2, 3])
+    print(sol.subsets(nums=[1, 2, 3]))  # [[], [1], [1, 2], [1, 2, 3], [1, 3], [2], [2, 3], [3]]

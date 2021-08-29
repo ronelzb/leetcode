@@ -1,5 +1,12 @@
-# https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
-# Definition for singly-linked list.
+# https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+# tags: linked_list, two_pointers
+#
+# Create a dummy node at the start to avoid additional validations
+# The input list is sorted, and we can determine if a node is a duplicate by comparing its value to the next one
+# If current and next are equal we will delete next node using pointer manipulation pointing current to the
+# next node subsequent
+#
+# Time complexity: O(n), Space complexityL O(1)
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -20,7 +27,6 @@ class Solution:
             if current.val == current.next.val:
                 while current.next and current.val == current.next.val:
                     current = current.next
-                current = current.next
                 prev.next = current
             else:
                 prev = current

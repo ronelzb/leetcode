@@ -1,4 +1,13 @@
 # https://leetcode.com/problems/permutations/
+# tags: #array, #backtracking, #dfs
+#
+# Classic backtracking problem.
+# Permute n numbers, we can add the nth number into the resulting weave list from the n-1 numbers,
+# in every possible position, and dfs cropping last seen number at each drill down.
+#
+# Time and space complexity explanation:
+# https://leetcode.com/problems/permutations/discuss/993970/Python-4-Approaches-%3A-Visuals-%2B-Time-Complexity-Analysis
+# Time complexity: O(n * n!), Space complexity(n!)
 from typing import List
 
 
