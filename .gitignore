@@ -143,3 +143,5 @@ pip-selfcheck.json
 # custom
 test/
 work_in_progress/
+package.json
+package-lock.json
