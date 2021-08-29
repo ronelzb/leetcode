@@ -1,8 +1,10 @@
 # https://leetcode.com/problems/range-sum-of-bst/
 # tags: #binary_tree, #dfs, #google, #tree
+#
 # The solution here is dfs through the entire bst checking that the current node is between [low, high]
 # An improvement to the initial dfs is to verify that the current node is inside either low or high
-# To continue going down the tree
+# to continue going down the tree
+#
 # Time complexity: O(n), Space complexity: O(n) it should be O(h) BUT worst case scenario is to have a skewed tree
 from typing import Optional
 

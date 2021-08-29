@@ -1,10 +1,12 @@
 # https://leetcode.com/problems/word-ladder/
 # tags: #bfs, #google, #graph_search
+#
 # Idea: Use BFS in a graph-type search to find the shortest path
 # At first, we'll use a queue like we normally do in a BFS
 # Then, for each node (evaluated word) let's look for a neighbor which has an adjacency
 # Adjacency: Will have a most one char difference
 # if a neighbor word is found remove it from the original set to skip visit it again (undirected graph)
+#
 # Time complexity: O(n * c * l) => n = len(word), c = distinct chars in wordList, l = len(wordList)
 # Space complexity: O(c + l + q) => 2 different sets plus the queue
 from collections import deque

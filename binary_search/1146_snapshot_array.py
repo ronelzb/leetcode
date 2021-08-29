@@ -1,7 +1,9 @@
 # https://leetcode.com/problems/snapshot-array/
 # tags: #binary_search, #data_structures, #google
+#
 # Idea: save only new values with the current snap_id at the specified index
 # We binary search on arr index to find the version, which has largest snapId <= snapId
+#
 # Time complexity: constructor=O(n), get=O(log n), Space complexity: O(n)
 class SnapshotArray:
     def __init__(self, length: int):

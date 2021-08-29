@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/add-two-numbers-ii/
 # tags: #linked_list, #math, #numbers, #recursion
+#
 # Idea:
 # 1. Since input lists have different sizes it is a good idea to get the sizes of each to determine which one
 # is longest/shortest and a delta to know when to take shortest into the sum.
@@ -7,6 +8,7 @@
 # (10 or greater can be a value in this staging list)
 # 3. The idea to store the values in a reversed list is when we reverse it back to get the final result
 # we can determine the carry at each one, from the least significant number
+#
 # Time complexity: O(2 * max(l1, l2)) => O(max(l1, l2)), Space complexity: O(max(l1, l2)) + 1 if carry at the end
 from typing import Optional
 

@@ -1,7 +1,9 @@
 # https://leetcode.com/problems/increasing-triplet-subsequence/
 # tags: #array, #greedy
+#
 # Intuition: Keep track of small (first) and middle (second) numbers when of the subsequence.
 # If we find a value that is bigger than both we return True
+#
 # Time complexity: O(n), Space complexity: O(1)
 import sys
 from typing import List

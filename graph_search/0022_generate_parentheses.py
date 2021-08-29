@@ -11,7 +11,7 @@
 # Second, at each step, you can either print “(“ or “)”, but print “)” only when there are more “(“s than “)”s.
 # Stop printing out “(“ when the number of “(“ s hit n
 #
-#
+# Time complexity: O(2^2n), Space complexity: O(n)
 from typing import List
 
 

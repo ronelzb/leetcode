@@ -1,11 +1,13 @@
 # https://leetcode.com/problems/strobogrammatic-number-ii/
 # tags: #backtracking, #dfs, #google
+#
 # A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down)
 # For example, the numbers "69", "88", and "818" are all strobogrammatic
 #
 # There are 2 constraints we need to be aware about: No 6/9 in the middle and no 0 at the extremes
 # The solution can be solved through backtracking constructing the number from the extremes to the middle
 # starting at (0, n-1) and go inward iterating all the keys in the strobogrammatic dictionary
+#
 # Time complexity: O(5^(n/2)), Space complexity: O(5^(n/2)) due to recursive stack trace
 from typing import List
 

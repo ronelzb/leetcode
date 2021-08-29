@@ -1,11 +1,14 @@
 # No link
 # tags: #amazon, #trie, #weigthed_tree
+#
 # Make a data structure to insert new words with its weight
 # and get the sum of any prefix asked
 # insert("apple", 3)
 # insert("ap", 2)
 # sum("ap") == 5
-
+#
+# Time complexity: O(n * m) n=word length - m=lookup nodes
+# Space complexity O(k * n) k=each node size - n=keys or nodes
 class TrieNode:
     def __init__(self, weight):
         self.weight = weight

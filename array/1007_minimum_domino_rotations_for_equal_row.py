@@ -1,16 +1,28 @@
 # https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/
 # tags: #array, #google, #greedy, #one_pass_counting #set_union
+#
+# Solution #1:
+# My first intuition was to start with tops[0] and bottoms[0] as possible candidates
+# But then I realize we can do a one-pass count to get both arrays count and an additional pass
+# to get those indexes with the same numbers
+# The solution suggests: Iterate for each number in the domino which satisfies the condition
+# tops_count[num] + bottoms[count] - same[count] = n and just get the min value
+#
+# Time complexity: O(3 * n + 6) => O(n), Space complexity: O(3 * 6) => O(1)
+#
+#
+# Solution #2:
+# Another solution is a greedy approach
+# As the first solutions we need to count each occurrence in tops and bottoms to find the min swaps
+# but this time we'll do it manually: count the occurrences from the first tops and,
+# if the result is -1 search first bottoms
+#
+# Time complexity: O(2 * n) => O(n), Space complexity(1)
 from collections import Counter
 from typing import List
 
 
 class Solution:
-    # My first intuition was to start with tops[0] and bottoms[0] as possible candidates
-    # But then I realize we can do a one-pass count to get both arrays count and an additional pass
-    # to get those indexes with the same numbers
-    # The solution suggests: Iterate for each number in the domino which satisfies the condition
-    # tops_count[num] + bottoms[count] - same[count] = n and just get the min value
-    # Time complexity: O(3 * n + 6) => O(n), Space complexity: O(3 * 6) => O(1)
     def minDominoRotations(self, tops: List[int], bottoms: List[int]) -> int:
         same_count, tops_count, bottoms_count = Counter(), Counter(tops), Counter(bottoms)
 
@@ -24,11 +36,6 @@ class Solution:
 
         return -1
 
-    # Another solution is a greedy approach
-    # As the first solutions we need to count each occurrence in tops and bottoms to find the min swaps
-    # but this time we'll do it manually: count the occurrences from the first tops and,
-    # if the result is -1 search first bottoms
-    # Time complexity: O(2 * n) => O(n), Space complexity(1)
     def minDominoRotationsGreedy(self, tops: List[int], bottoms: List[int]) -> int:
         n = len(tops)
 

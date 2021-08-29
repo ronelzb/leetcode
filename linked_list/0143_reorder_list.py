@@ -1,9 +1,11 @@
 # https://leetcode.com/problems/reorder-list/
 # tags: #amazon, #linked_list, #slow_fast_pointer
+#
 # Rearrange a singly linked list 1 -> 2 -> 3 -> ... -> n-1 -> n,
 # So that it will result 1 -> n-2 -> 2 -> n-1 -> 3 -> n
 # Reverse a linked list: https://www.geeksforgeeks.org/reverse-a-linked-list/
 # Rearrange linked list: https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/
+# Time complexity: O(3*n) => O(n), Space complexity: O(n) due to reverse recursion and new linked list
 class ListNode:
     def __init__(self, value):
         self.value = value

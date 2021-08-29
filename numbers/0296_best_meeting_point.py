@@ -1,10 +1,12 @@
 # https://leetcode.com/problems/best-meeting-point/
 # tags: #google, #math, #matrix
+#
 # Manhattan distance: (p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|
 # The optimal point is the mean
 # For example, 1-1-0-0-1, the optimal point is at x = 1, and assume the total distance is d
 # If we move the point to the right, x = 2, the total distance will be d + 2 - 1,
 # since there will be two points on its left and 1 point on its right
+#
 # Time complexity: O(m * n + nlog(n)), Space complexity: O(m + n)
 from typing import List
 

@@ -12,9 +12,6 @@
 # recursively.
 #
 # Time complexity: O(n), Space complexity: O(n)
-from collections import deque
-
-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x

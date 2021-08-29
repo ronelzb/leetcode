@@ -1,11 +1,13 @@
 # https://leetcode.com/problems/minimum-window-subsequence/
 # tags: #dp, #google, #matrix, #sequence, #string
+#
 # This problem can be solved as follows:
 # We can build a dp matrix in which the subsequence will start at index k of S
 # The first step is to find the letter of T found at indices of S, this will be our possible k
 # Then, if S[i] == T[i] it means the last character is the same to previous one dp[i][j] = dp[i - 1][j - 1]
 # Eventually, we need to reconstruct the minimum subsequence finding each subsequence found in S (dp[i][t - 1] > 1)
 # We return an empty string in case we do not find one, where start = -1 after traversing s in the dp
+#
 # Time complexity: O(s + s*t + s) => O(st), Space complexity: O(s*t)
 import sys
 

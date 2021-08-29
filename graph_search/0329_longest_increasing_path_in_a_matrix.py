@@ -1,9 +1,11 @@
 # https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 # tags: #dfs, #dp, #google, #graph_search
+#
 # The solution is a combination between dfs and topological sort, but in this case we can exchange the
 # topological construction by a dp matrix that will store the max increasing path at each coordinate
 # dfs calculates the value of dp[i][j] recursively and
 # IMPORTANT we do not recalculate a visited location since dp[][] cache the result
+#
 # Time complexity: O(m * n), Space complexity: O(m * n)
 from typing import List
 
