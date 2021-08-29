@@ -1,2 +1,2 @@
 # leetcode exercises
-Personal repository where I store my solutions done in LeetCode.
+Personal repository for data structures and algorithm solutions done in LeetCode.
