@@ -1,5 +1,10 @@
 # https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-# Definition for a binary tree node.
+# tags: #bfs, #binary_tree, #divide_and_conquer
+#
+# This problem can have multiple solution approaches, my solution uses a queue and reverse insert
+# for each level instead of list.
+#
+# Time complexity: O(n), Space complexity: O(n)
 from collections import deque
 from typing import List
 

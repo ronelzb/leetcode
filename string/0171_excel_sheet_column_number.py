@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/excel-sheet-column-number/
-# tags: #numbers
+# tags: #math, #numbers, #string
 #
 # We iterate through the chars in the input and we want to take whatever is stored in res already,
 # multiply it by 26.

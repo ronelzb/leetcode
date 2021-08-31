@@ -1,5 +1,17 @@
 # https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-# Definition for a binary tree node.
+# tags: #array, #binary_tree, #bst, #divide_and_conquer
+#
+# In this problem there are two possible approaches:
+# 1. Preorder Traversal: Always Choose Left Middle Node as a Root
+# 2. Preorder Traversal: Always Choose Right Middle Node as a Root
+#
+# My approach is the first where:
+# int p = (left + right) / 2;
+# root = p
+# root.left = [left, m-1]
+# root.right = [m+1, right]
+#
+# Time complexity: O(n), Space complexity: O(n+log(n))=>O(n) / log(n)=stack trace recursion
 from typing import List
 
 

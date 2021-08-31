@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/minimum-depth-of-binary-tree/
-# Definition for a binary tree node.
+# tags: #binary_tree, #dfs
+#
+# We need to add the smaller one of the child depths.
+#
+# Time complexity: O(n), Space complexity: O(n) n=stack trace recursion
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
