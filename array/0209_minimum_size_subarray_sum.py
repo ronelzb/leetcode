@@ -1,9 +1,15 @@
 # https://leetcode.com/problems/minimum-size-subarray-sum/
+# tags: #array, #binary_search, #prefix_sum, #sliding_window
+#
+# Solution 1: Sliding window technique
+# Time complexity: O(n), Space complexity: O(1)
+#
+# Solution 2: Binary search using a cumulative array as the problem says "sub array sum"
+# Time complexity: O(log(n)), Space complexity: O(1)
 from typing import List
 
 
 class Solution:
-    # 0(n) sliding window technique
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         start = current = 0
         n = len(nums)
@@ -19,7 +25,6 @@ class Solution:
 
         return min_length if min_length < n + 1 else 0
 
-    # O(log(n)) binary search using a cumulative array as the problem says "sub array sum"
     def minSubArrayLen2(self, target: int, nums: List[int]) -> int:
         n = len(nums)
         if n == 0:

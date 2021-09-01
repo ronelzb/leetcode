@@ -1,5 +1,11 @@
 # https://leetcode.com/problems/path-sum/
-# Definition for a binary tree node.
+# tags: #binary_tree, #dfs
+#
+# Most of the solutions you will find uses subtraction on the current node's value.
+# Instead, I used a different approach: To sum the path in preorder fashion until we reach
+# the tree leaves and there we check if the targetSum == pathSum
+#
+# Time complexity: O(n), Space complexity: O(n) stack trace recursion
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
