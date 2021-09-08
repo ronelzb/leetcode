@@ -1,14 +1,22 @@
 # https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
+# tags: #array, #heap
+#
+# Graphical explanation:
+# https://leetcode.com/problems/find-k-pairs-with-smallest-sums/discuss/84551/simple-Java-O(KlogK)-solution-with-explanation
+#
+# Idea: Use heap to main smallest element first
+# The heap can be initialized using all numbers from nums1 and just the first from nums2
+# This will give us the first pair guaranteed (to maintain consistency in the while loop)
+# In the while loop pop the first element and push the current i and next j
+# Using the sum between the pair as the heap ordering criteria
+#
+# Time Complexity: O(k*log(n)), Space complexity: O(k*log(n)) k=m*n
 import heapq
 from typing import List
 
 
 class Solution:
-    # Idea: Use heap to main smallest element first
-    # The heap can be initialized using all numbers from nums1 and just the first from nums2
-    # This will give us the first pair guaranteed (to maintain consistency in the while loop)
-    # In the while loop pop the first element and push the current i and next j
-    # Using the sum between the pair as the heap ordering criteria
+
     def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
         pairs = []
         n1, n2 = len(nums1), len(nums2)

@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/first-unique-character-in-a-string/
+# tags: #counting, #hash_table, #string
+#
+# Count all the different chars in the string s
+# Traverse the string and the first char which has a count of 1 wins
+#
+# Time Complexity: O(n), Space complexity: O(26) => O(1)
 from collections import Counter
 
 

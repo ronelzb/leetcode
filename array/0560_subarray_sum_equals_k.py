@@ -1,10 +1,14 @@
 # https://leetcode.com/problems/subarray-sum-equals-k/
+# tags: #array, #hash_table, #prefix_sum
+#
+# Explanation at:
+# https://leetcode.com/problems/subarray-sum-equals-k/discuss/341399/Python-clear-explanation-with-code-and-example
+#
+# Time Complexity: O(n), Space complexity: O(n)
 from typing import List
 
 
 class Solution:
-    # Explanation at:
-    # https://leetcode.com/problems/subarray-sum-equals-k/discuss/341399/Python-clear-explanation-with-code-and-example
     def subarraySum(self, nums: List[int], k: int) -> int:
         count, current_sum = 0, 0
         sums = {0: 1}
