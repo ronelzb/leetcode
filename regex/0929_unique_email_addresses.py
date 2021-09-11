@@ -1,4 +1,13 @@
 # https://leetcode.com/problems/unique-email-addresses/
+# tags: #array, #hash_table, #regex, #string
+#
+# Solution 1: Use regex
+# find valid emails using regex then separate the email user part to store it in a set, count the set
+# Time complexity: O(n*m), Space complexity: O(n*m)
+#
+# Solution 2: Use string splitting only
+# Instead of using regex make splitting to find the email address part required and store it in the set, count the set
+# Time complexity: O(n*m), Space complexity: O(n*m)
 import re
 from typing import List
 
@@ -10,7 +19,7 @@ class Solution:
         for email in emails:
             m = re.search(r'^([^\+]*)\+?(.*)?@(.*)', email)
             if m:
-                address = re.sub(r"\.", "", m[1])
+                address = re.sub(r"../problems/60_questions_to_solve", "", m[1])
                 unique_emails.add(address + "@" + m[3])
 
         return len(unique_emails)

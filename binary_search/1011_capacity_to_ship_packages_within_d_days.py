@@ -1,13 +1,18 @@
 # https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
+# tags: #array, #binary_search, #greedy
+#
+# Idea: https://www.geeksforgeeks.org/capacity-to-ship-packages-within-d-days/
+# This problem can be solved using Greedy and Binary Search techniques.
+# Using max_elem as the maximum element in the array and total_sum as total sum of the array
+# They will be the lower and upper bounds of the search
+# Check if it is possible to ship all the packages within D days when the maximum capacity allowed is middle
+#
+# Time complexity: O(log(n)), Space complexity: O(1)
 from typing import List
 
 
 class Solution:
-    # Idea: https://www.geeksforgeeks.org/capacity-to-ship-packages-within-d-days/
-    # This problem can be solved using Greedy and Binary Search techniques.
-    # Using max_elem as the maximum element in the array and total_sum as total sum of the array
-    # They will be the lower and upper bounds of the search
-    # Check if it is possible to ship all the packages within D days when the maximum capacity allowed is middle
+
     def shipWithinDays(self, weights: List[int], days: int) -> int:
         left = max(weights)  # left bound
         right = sum(weights)  # right bound

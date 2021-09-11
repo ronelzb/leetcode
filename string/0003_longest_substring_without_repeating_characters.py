@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/
+#
+# Solution: Sliding window
+# Use a dictionary to track each last seen character index
+# Start index will keep track of the last seen character index + 1
+#
+# Time complexity: O(n), Space complexity: O(26) -> O(1)
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         char_last_index = dict()
