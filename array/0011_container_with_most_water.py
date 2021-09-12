@@ -1,4 +1,19 @@
 # https://leetcode.com/problems/container-with-most-water/
+# #array, #greedy, #two_pointers
+#
+# Start by initializing two pointers at both ends of the array.
+# Every time move the smaller value pointer to inner array.
+#
+# "By moving shorter end pointer further doesn't eliminate the final answer (with two ends at maxi, maxj respectively)
+# in our process"
+# We know as we move any pointer further, the length of the next rectangle decreases,
+# so the height needs to increase as to result in a larger area
+# min(height[maxi], height[maxj]) > min(height[i], height[j])
+#
+# So the smaller one in height[i], height[j] won't become any end in the maximum rectangle,
+# so it's safe to move forward without it
+#
+# Time complexity: O(n), Space complexity: O(1)
 from typing import List
 
 

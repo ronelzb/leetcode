@@ -1,5 +1,13 @@
 # https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-# Definition for singly-linked list.
+# tags: #linked_list, #two_pointers
+#
+# Solution: One pass
+# Move fast pointer to the n - 1 places forward, then move both at the same speed.
+# Eventually, when the fast pointer reaches the end, the slow pointer will be n-1 places behind
+# From there just verify the edge case if n == len(list) to move the head to the next pointer
+# For the rest of the cases set slow pointer.next to the subsequent element
+#
+# Time complexity: O(n), Space complexity: O(1)
 class ListNode:
     def __init__(self, val):
         self.val = val

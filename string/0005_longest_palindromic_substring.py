@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/longest-palindromic-substring/
+# tags: #string
+#
+# Solution: odd + even substrings
+# For each mid point i, use two points (left, right) to check the values on i's left and right sides respectively
+#
+# Time complexity: O(n^2), Space complexity: O(1)
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         max_length = 1

@@ -1,4 +1,12 @@
 # https://leetcode.com/problems/3sum/
+# #array, #sorting, #two_pointers
+#
+# Approach: Sorting + 2 sum
+# The idea is to sort an input array and then run through all indices of a possible first element of a triplet.
+# For each possible first element we make a standard bi-directional 2Sum traversal of the remaining part of the array.
+# Also we want to skip equal elements to avoid duplicates in the answer without making a set like that.
+#
+# Time complexity: O(n^2), Space complexity: O(1)
 from typing import List
 
 
