@@ -1,3 +1,12 @@
+# https://leetcode.com/problems/rotate-image/
+# tags: #array, #math, #matrix
+#
+# Solution: Transpose and reverse
+# We process the outer circle of the matrix, and then we go deep to the inner circle until the side length of
+# the last inner circle is smaller than 2 (meaning there is only one center element left).
+# For each circle, we exchange elements clockwise and after we finish one circle,
+# we can continue processing the next.
+# Time complexity: O(n^2), Space complexity: O(1)
 from typing import List
 
 
@@ -7,19 +16,13 @@ class Solution:
 
         for i in range(n // 2):
             for j in range(i, n - 1 - i):  # (i, n - i):
-                # print(">>>>>>>>>", i, j)
                 # upper-left temp
                 temp = matrix[i][j]
-                # print(temp)
-
                 # lower-left -> upper-left
-                # print(matrix[n - 1 - j][i])
                 matrix[i][j] = matrix[n - 1 - j][i]
                 # lower-right -> lower-left
-                # print(matrix[n - 1 - i][n - 1 - j])
                 matrix[n - 1 - j][i] = matrix[n - 1 - i][n - 1 - j]
                 # upper-right -> lower-right
-                # print(matrix[j][n - 1 - i])
                 matrix[n - 1 - i][n - 1 - j] = matrix[j][n - 1 - i]
                 # temp -> upper-right
                 matrix[j][n - 1 - i] = temp

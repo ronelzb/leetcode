@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/search-in-rotated-sorted-array/
+# tags: #array, #binary_search
+#
+# Solution: Binary Search
+# Explanation at:
+# https://leetcode.com/problems/search-in-rotated-sorted-array/discuss/273622/Javascript-Simple-O(log-N)-Binary-Search-Solution
+# Time complexity: O(log(n)), Space complexity: O(1)
 from typing import List
 
 
