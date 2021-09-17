@@ -66,6 +66,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [3. longest substring without repeating characters](https://github.com/ronelzb/leetcode/tree/master/linked_list/0003_longest_substring_without_repeating_characters.py)
     * [19. remove nth node from end list](https://github.com/ronelzb/leetcode/tree/master/linked_list/0019_remove_nth_node_from_end_list.py)
     * [23. merge k sorted lists](https://github.com/ronelzb/leetcode/tree/master/linked_list/0023_merge_k_sorted_lists.py)
+    * [25. reverse nodes in k group](https://github.com/ronelzb/leetcode/tree/master/linked_list/0025_reverse_nodes_in_k_group.py)
     * [82. remove duplicates from sorted list ii](https://github.com/ronelzb/leetcode/tree/master/linked_list/0082_remove_duplicates_from_sorted_list_ii.py)
     * [83. remove duplicates from sorted list](https://github.com/ronelzb/leetcode/tree/master/linked_list/0083_remove_duplicates_from_sorted_list.py)
     * [143. reorder list](https://github.com/ronelzb/leetcode/tree/master/linked_list/0143_reorder_list.py)
