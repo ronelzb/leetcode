@@ -4,6 +4,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
 ### Table of Contents
 * [array](https://github.com/ronelzb/leetcode/tree/master/array)
     * [1. two sum](https://github.com/ronelzb/leetcode/tree/master/array/0001_two_sum.py)
+    * [4. median of two sorted arrays](https://github.com/ronelzb/leetcode/tree/master/array/0004_median_of_two_sorted_arrays.py)
     * [6. zigzag conversion](https://github.com/ronelzb/leetcode/tree/master/array/0006_zigzag_conversion.py)
     * [11. container with most water](https://github.com/ronelzb/leetcode/tree/master/array/0011_container_with_most_water.py)
     * [15. 3sum](https://github.com/ronelzb/leetcode/tree/master/array/0015_3sum.py)
@@ -14,6 +15,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [283. move zeroes](https://github.com/ronelzb/leetcode/tree/master/array/0283_move_zeroes.py)
     * [334. increasing triplet sequence](https://github.com/ronelzb/leetcode/tree/master/array/0334_increasing_triplet_sequence.py)
     * [349. intersection of two arrays](https://github.com/ronelzb/leetcode/tree/master/array/0349_intersection_of_two_arrays.py)
+    * [350. intersection of two arrays ii](https://github.com/ronelzb/leetcode/tree/master/array/0350_intersection_of_two_arrays_ii.py)
     * [373. find k pairs with smallest sums](https://github.com/ronelzb/leetcode/tree/master/array/0373_find_k_pairs_with_smallest_sums.py)
     * [387. first unique character in a string](https://github.com/ronelzb/leetcode/tree/master/array/0387_first_unique_character_in_a_string.py)
     * [560. subarray sum equals k](https://github.com/ronelzb/leetcode/tree/master/array/0560_subarray_sum_equals_k.py)
