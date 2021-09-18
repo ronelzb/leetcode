@@ -57,6 +57,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [39. combination sum](https://github.com/ronelzb/leetcode/tree/master/graph_search/0039_combination_sum.py)
     * [127. word ladder](https://github.com/ronelzb/leetcode/tree/master/graph_search/0127_word_ladder.py)
     * [247. strobogrammatic number ii](https://github.com/ronelzb/leetcode/tree/master/graph_search/0247_strobogrammatic_number_ii.py)
+    * [282. expression add operators](https://github.com/ronelzb/leetcode/tree/master/graph_search/0282_expression_add_operators.py)
     * [329. longest increasing path in a matrix](https://github.com/ronelzb/leetcode/tree/master/graph_search/0329_longest_increasing_path_in_a_matrix.py)
     * [489. robot room cleaner](https://github.com/ronelzb/leetcode/tree/master/graph_search/0489_robot_room_cleaner.py)
     * [695. max area of island](https://github.com/ronelzb/leetcode/tree/master/graph_search/0695_max_area_of_island.py)
