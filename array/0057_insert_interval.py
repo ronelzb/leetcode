@@ -1,3 +1,11 @@
+# https://leetcode.com/problems/insert-interval/
+# tags: #array, #greedy
+#
+# Solution: Greedy
+# First, put all intervals that are to the left of the inserted interval.
+# Second, merge all intervals that intersect with the inserted interval.
+# Finally, put all intervals that are to the right of the inserted interval.
+# Time complexity: O(n), Space complexity: O(1)
 from typing import List
 
 

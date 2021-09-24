@@ -1,6 +1,13 @@
 # https://leetcode.com/problems/spiral-matrix/
-# nice explanation:
+# tags: #array, #matrix
+#
+# Nice explanation:
 # https://leetcode.com/problems/spiral-matrix/discuss/801834/Python-O(m*n)-by-simulation-w-Visualization
+#
+# Solution: Layer by Layer
+# Traverse right increasing top, down decreasing right, left decreasing bottom and finally up increasing left
+# taking special consideration in which direction we're going so to use the for loop adequately.
+# Time complexity: O(n * m), Space complexity: O(n * m)
 from typing import List
 
 

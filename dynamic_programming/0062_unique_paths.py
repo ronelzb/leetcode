@@ -1,4 +1,16 @@
 # https://leetcode.com/problems/unique-paths/
+# tags: #dp, #math, #combinatorics
+#
+# Solution 1: Recursion
+# Use dfs to find a possible path from all routes to the goal
+# Time complexity: O(2^(m+n)), Space complexity: O(m+n)
+# For time/space complexities here: We have 2 possible branches (going up and going left),
+# while for the depth, is the maximum possible distance taken to get 0,0 which is m + n.
+# Given this, we can also mention the space complexity taken on the stack O(m + n)
+#
+# Solution 1: Dynamic Programming
+# Memoize the number of hits at each visited location until the goal
+# Time complexity: O(m*n), Space complexity: O(m*n)
 class Solution:
     def __init__(self):
         self.visited = dict()

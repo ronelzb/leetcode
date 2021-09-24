@@ -1,3 +1,13 @@
+# https://leetcode.com/problems/jump-game/
+# tags: #array, #dp, #greedy
+#
+# Solution: Dynamic Programming
+# Keep track of the furthest reachable index (as the problem implies: maximal jumps where you can hit
+# a range of targets instead of singular jumps where you can only hit one target).
+# We iterate over each index, and if we ever encounter an index that is not reachable,
+# we abort and return false. By the end, we will have iterated to the last index.
+# If the loop finishes, then the last index is reachable.
+# Time complexity: O(n), Space complexity: O(1) in-place
 from typing import List
 
 
