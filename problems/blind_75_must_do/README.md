@@ -1,1 +1,0 @@
-[Blind 75 Must Do](https://leetcode.com/list/xi4ci4ig/) list from [leetcode](https://leetcode.com)
