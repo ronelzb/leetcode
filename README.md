@@ -1,6 +1,9 @@
 # LeetCode exercises
 Personal repository for data structures and algorithm solutions in LeetCode.
 
+### Recommended problem lists
+* [Blind 75 Must Do](https://leetcode.com/list/xi4ci4ig/)
+
 ### Table of Contents
 * [array](https://github.com/ronelzb/leetcode/tree/master/array)
     * [1. two sum](https://github.com/ronelzb/leetcode/tree/master/array/0001_two_sum.py)
@@ -9,6 +12,8 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [11. container with most water](https://github.com/ronelzb/leetcode/tree/master/array/0011_container_with_most_water.py)
     * [15. 3sum](https://github.com/ronelzb/leetcode/tree/master/array/0015_3sum.py)
     * [18. 4 sum](https://github.com/ronelzb/leetcode/tree/master/array/0018_4_sum.py)
+    * [26. remove duplicates from sorted array](https://github.com/ronelzb/leetcode/tree/master/array/0026_remove_duplicates_from_sorted_array.py)
+    * [27. remove element](https://github.com/ronelzb/leetcode/tree/master/array/0027_remove_element.py)
     * [31. next permutation](https://github.com/ronelzb/leetcode/tree/master/array/0031_next_permutation.py)
     * [57. insert interval](https://github.com/ronelzb/leetcode/tree/master/array/0057_insert_interval.py)
     * [209. minimum size subarray sum](https://github.com/ronelzb/leetcode/tree/master/array/0209_minimum_size_subarray_sum.py)
@@ -53,6 +58,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [764. largest plus sign](https://github.com/ronelzb/leetcode/tree/master/dynamic_programming/764_largest_plus_sign.py)
     * [position](https://github.com/ronelzb/leetcode/tree/master/dynamic_programming/position)
         * [63. unique paths ii](https://github.com/ronelzb/leetcode/tree/master/dynamic_programming/position/0063_unique_paths_ii.py)
+        * [70. climbing stairs](https://github.com/ronelzb/leetcode/tree/master/dynamic_programming/position/0070_climbing_stairs.py)
     * [sequence](https://github.com/ronelzb/leetcode/tree/master/dynamic_programming/sequence)
         * [115. distinct subsequences](https://github.com/ronelzb/leetcode/tree/master/dynamic_programming/sequence/0115_distinct_subsequences.py)
         * [446. arithmetic slices ii subsequence](https://github.com/ronelzb/leetcode/tree/master/dynamic_programming/sequence/0446_arithmetic_slices_ii_subsequence.py)
@@ -60,6 +66,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
 * [graph search](https://github.com/ronelzb/leetcode/tree/master/graph_search)
     * [22. generate parentheses](https://github.com/ronelzb/leetcode/tree/master/graph_search/0022_generate_parentheses.py)
     * [39. combination sum](https://github.com/ronelzb/leetcode/tree/master/graph_search/0039_combination_sum.py)
+    * [79. word search](https://github.com/ronelzb/leetcode/tree/master/graph_search/0079_word_search.py)
     * [127. word ladder](https://github.com/ronelzb/leetcode/tree/master/graph_search/0127_word_ladder.py)
     * [247. strobogrammatic number ii](https://github.com/ronelzb/leetcode/tree/master/graph_search/0247_strobogrammatic_number_ii.py)
     * [282. expression add operators](https://github.com/ronelzb/leetcode/tree/master/graph_search/0282_expression_add_operators.py)
@@ -68,6 +75,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [695. max area of island](https://github.com/ronelzb/leetcode/tree/master/graph_search/0695_max_area_of_island.py)
     * [818. race car](https://github.com/ronelzb/leetcode/tree/master/graph_search/0818_race_car.py)
     * [1041. robot bounded in circle](https://github.com/ronelzb/leetcode/tree/master/graph_search/1041_robot_bounded_in_circle.py)
+    * [1293. shortest path in a grid with obstacles elimination](https://github.com/ronelzb/leetcode/tree/master/graph_search/1293_shortest_path_in_a_grid_with_obstacles_elimination.py)
     * [882. reachable nodes in subdivided graph](https://github.com/ronelzb/leetcode/tree/master/graph_search/882_reachable_nodes_in_subdivided_graph.py)
 * [linked list](https://github.com/ronelzb/leetcode/tree/master/linked_list)
     * [2. add two numbers](https://github.com/ronelzb/leetcode/tree/master/linked_list/0002_add_two_numbers.py)
@@ -82,6 +90,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
 * [matrix](https://github.com/ronelzb/leetcode/tree/master/matrix)
     * [48. rotate image](https://github.com/ronelzb/leetcode/tree/master/matrix/0048_rotate_image.py)
     * [54. spiral matrix](https://github.com/ronelzb/leetcode/tree/master/matrix/0054_spiral_matrix.py)
+    * [73. set matrix zeroes](https://github.com/ronelzb/leetcode/tree/master/matrix/0073_set_matrix_zeroes.py)
     * [85. maximal rectangle](https://github.com/ronelzb/leetcode/tree/master/matrix/0085_maximal_rectangle.py)
     * [240. search a 2d matrix ii](https://github.com/ronelzb/leetcode/tree/master/matrix/0240_search_a_2d_matrix_ii.py)
     * [1074. number of submatrices that sum to target](https://github.com/ronelzb/leetcode/tree/master/matrix/1074_number_of_submatrices_that_sum_to_target.py)
@@ -90,15 +99,12 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [9. palindrome number](https://github.com/ronelzb/leetcode/tree/master/numbers/0009_palindrome_number.py)
     * [296. best meeting point](https://github.com/ronelzb/leetcode/tree/master/numbers/0296_best_meeting_point.py)
     * [1088. confusing number ii](https://github.com/ronelzb/leetcode/tree/master/numbers/1088_confusing_number_ii.py)
+    * [1137. nth tribonacci number](https://github.com/ronelzb/leetcode/tree/master/numbers/1137_nth_tribonacci_number.py)
 * [permutation and combination](https://github.com/ronelzb/leetcode/tree/master/permutation_and_combination)
     * [46. permutations](https://github.com/ronelzb/leetcode/tree/master/permutation_and_combination/0046_permutations.py)
     * [78. subsets](https://github.com/ronelzb/leetcode/tree/master/permutation_and_combination/0078_subsets.py)
 * [problems](https://github.com/ronelzb/leetcode/tree/master/problems)
     * [blind 75 must do](https://github.com/ronelzb/leetcode/tree/master/problems/blind_75_must_do)
-        * [70. climbing stairs](https://github.com/ronelzb/leetcode/tree/master/problems/blind_75_must_do/0070_climbing_stairs.py)
-        * [73. set matrix zeroes](https://github.com/ronelzb/leetcode/tree/master/problems/blind_75_must_do/0073_set_matrix_zeroes.py)
-        * [76. minimum window substring](https://github.com/ronelzb/leetcode/tree/master/problems/blind_75_must_do/0076_minimum_window_substring.py)
-        * [79. word search](https://github.com/ronelzb/leetcode/tree/master/problems/blind_75_must_do/0079_word_search.py)
         * [91. decode ways](https://github.com/ronelzb/leetcode/tree/master/problems/blind_75_must_do/0091_decode_ways.py)
         * [98. validate binary tree](https://github.com/ronelzb/leetcode/tree/master/problems/blind_75_must_do/0098_validate_binary_tree.py)
         * [100. same tree](https://github.com/ronelzb/leetcode/tree/master/problems/blind_75_must_do/0100_same_tree.py)
@@ -217,6 +223,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [8. string to integer atoi](https://github.com/ronelzb/leetcode/tree/master/string/0008_string_to_integer_atoi.py)
     * [12. integer to roman](https://github.com/ronelzb/leetcode/tree/master/string/0012_integer_to_roman.py)
     * [14. longest common prefix](https://github.com/ronelzb/leetcode/tree/master/string/0014_longest_common_prefix.py)
+    * [28. implement strStr](https://github.com/ronelzb/leetcode/tree/master/string/0028_implement_strStr.py)
     * [49. group anagrams](https://github.com/ronelzb/leetcode/tree/master/string/0049_group_anagrams.py)
     * [68. text justification](https://github.com/ronelzb/leetcode/tree/master/string/0068_text_justification.py)
     * [76. minimum window substring](https://github.com/ronelzb/leetcode/tree/master/string/0076_minimum_window_substring.py)
@@ -230,3 +237,4 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [208. implement trie](https://github.com/ronelzb/leetcode/tree/master/trie/0208_implement_trie.py)
     * [588. design in memory file system](https://github.com/ronelzb/leetcode/tree/master/trie/0588_design_in_memory_file_system.py)
     * [weighted prefix search](https://github.com/ronelzb/leetcode/tree/master/trie/weighted_prefix_search.py)
+
