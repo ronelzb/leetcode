@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/word-search/
+# tags: #array, #dfs, #matrix
+#
+# Solution: dfs
+# Check whether can find word, start at (i,j) position
+# Use dfs to find the rest of the "word" in any permitted direction
+# Time complexity: O(m*n), Space complexity: O(m+n)
 from typing import List
 
 

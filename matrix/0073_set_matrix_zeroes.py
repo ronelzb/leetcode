@@ -1,4 +1,11 @@
 # https://leetcode.com/problems/set-matrix-zeroes/
+# tags: #array, #matrix
+#
+# Solution: Save states in-place
+# Store state of each row-column related to (i, j) == 0 with an "x" or any nomenclature you see fit, the important
+# thing here is to be consistent.
+# Then make a second-pass in the matrix to find any "x" stored and swap it into a 0.
+# Time complexity: O(m*n), Space complexity: O(1)
 from typing import List
 
 
@@ -32,4 +39,4 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    sol.setZeroes(matrix=[[1, 1, 1], [1, 0, 1], [1, 1, 1]]) == [[1, 0, 1], [0, 0, 0], [1, 0, 1]]
+    sol.setZeroes([[1, 1, 1], [1, 0, 1], [1, 1, 1]])  # [[1, 0, 1], [0, 0, 0], [1, 0, 1]])
