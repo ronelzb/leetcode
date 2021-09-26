@@ -1,5 +1,11 @@
 # https://leetcode.com/problems/same-tree/
-# Definition for a binary tree node.
+# tags: #binary_tree, #dfs, #microsoft
+#
+# Solution: DFS
+# * Equal nullity denotes that this branch is the same (local equality)
+# * Unequal nullity denotes that the trees aren't the same
+# * Both nodes have values, descend if those values are equal
+# Time complexity: O(n) n=len(p), Space complexity: O(n)
 class TreeNode:
     def __init__(self, val):
         self.val = val

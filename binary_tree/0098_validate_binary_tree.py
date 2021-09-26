@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/validate-binary-search-tree/
-# Definition for a binary tree node.
+# tags: #binary_tree, #bst, #dfs
+#
+# Solution: DFS
+# Recursively iterating over the tree while defining interval <min_val, max_val> for each node.
+# Time complexity: O(n), Space complexity: O(n)
 class TreeNode:
     def __init__(self, val=0):
         self.val = val
