@@ -6,6 +6,7 @@
 # When a closing parentheses is found pop last pushed element in the stack and 2 options can happen:
 # 1. If the stack is empty append current letter to the stack
 # 2. If it contains data check if the current i - last seen opening parentheses is the longest
+# Time Complexity: O(n), Space complexity: O(n)
 #
 # Solution 2: Dynamic Programming
 # If s[i] is '(', set dp[i] to 0, because any string end with '(' cannot be a valid one.
