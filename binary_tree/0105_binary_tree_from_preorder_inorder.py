@@ -1,5 +1,19 @@
 # https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
-# Definition for a binary tree node.
+# tags: #binary_tree, #divide_and_conquer, #hash_table
+#
+# Solution 1: Stack + dictionary
+# * Keep pushing the nodes from the preorder into a stack (and keep making the tree by adding nodes to the left
+# of the previous node) until the top of the stack matches the inorder.
+# * At this point, pop the top of the stack until the top does not equal inorder
+# (keep a flag to note that you have made a pop).
+# * Repeat 1 and 2 until preorder is empty. The key point is that whenever the flag is set,
+# insert a node to the right and reset the flag.
+# Time complexity: O(n), Space complexity: O(n)
+#
+# Solution 2: Recursion
+# Explanation at:
+# https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/981152/Recursion-or-Explanation-%2B-Visuals-or-Python
+# Time complexity: O(n), Space complexity: O(n)
 from collections import deque
 from typing import List
 

@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/maximum-depth-of-binary-tree/
-# https://leetcode.com/problems/binary-tree-level-order-traversal/
+# tags: #binary_tree, #dfs, #microsoft
+#
+# Solution: Depth-first search
+# Classical DFS problem, use recursion incrementing the level at each call, compare the max between children
+# Time complexity: O(n), Space complexity: (n)
 class TreeNode:
     def __init__(self, val):
         self.val = val

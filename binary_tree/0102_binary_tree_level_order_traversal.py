@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/binary-tree-level-order-traversal/
+# tags: #binary_tree, #bfs, #bst, #microsoft
+#
+# Solution: Breadth-first search
+# Traverse the tree using a queue (bfs), at each node save the children next level
+# When a new level is detected just create a new list for it
+# Time complexity: O(n), Space complexity: O(n)
 from collections import deque
 from typing import List
 
