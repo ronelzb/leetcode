@@ -48,5 +48,5 @@ if __name__ == "__main__":
     sol = Solution()
     print(sol.sortArrayByParityII_sorting(nums=[4, 2, 5, 7]))  # [4,5,2,7] || [4,7,2,5] || [2,5,4,7] || [2,7,4,5]
     print(sol.sortArrayByParityII_sorting(nums=[2, 3]))  # [2,3]
-    print(sol.sortArrayByParityII_sorting(nums=[648, 831, 560, 986, 192, 424, 997, 829, 897, 843]))  # [648,831,560,997,192,
-    # 897,986,829,424,843]
+    print(sol.sortArrayByParityII_sorting(nums=[648, 831, 560, 986, 192, 424, 997, 829, 897, 843]))  # [648,831,560,
+    # 997,192, 897,986,829,424,843]
