@@ -1,4 +1,11 @@
 # https://leetcode.com/problems/longest-common-subsequence/
+#
+# Solution: Dynamic Programming
+# Bottom-up DP utilizes a matrix m where we track LCS sizes for each combination of i and j.
+# * If a[i] == b[j], LCS for i and j would be 1 plus LCS till the i-1 and j-1 indexes.
+# * Otherwise, we will take the largest LCS if we skip a character from one of the string
+# (max(m[i - 1][j], m[i][j - 1]).
+# Time complexity: O(m*n), Space complexity: O(m*n)
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         m, n = len(text1), len(text2)
