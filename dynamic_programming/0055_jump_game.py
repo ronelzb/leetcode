@@ -19,6 +19,7 @@ class Solution:
         if nums[0] == 0:
             return False
 
+        # This case improves overall time by a lot!
         nums[1] = max(nums[0] - 1, nums[1])
         if nums[1] == 0:
             return False
