@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/multiply-strings/
-# tags: #google, #math, #string, #simulation
+# tags: #google, #math, #simulation, #string
 #
 # Graphical explanation at:
 # https://leetcode.com/problems/multiply-strings/discuss/17605/Easiest-JAVA-Solution-with-Graph-Explanation
