@@ -1,4 +1,12 @@
 # https://leetcode.com/problems/valid-palindrome/
+# tags: #string, #two_pointers
+#
+# Solution: Two pointers
+# Move 2 pointers from each end until they collide.
+# * Increment left pointer if not alphanumeric.
+# * Decrement right pointer if no alphanumeric.
+# * Exit and return error if pointers don't match.
+# Time complexity: O(n), Space complexity: O(1)
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         start, end = 0, len(s) - 1

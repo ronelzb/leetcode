@@ -1,4 +1,11 @@
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+# tags: #array, #dp
+#
+# Solution: Dynamic Programming
+# At each price: Find min price after finding max profit
+# Time complexity: O(n), Space complexity: O(1)
+#
+# Variant Solution: Kadane's Algorithm "max subarray problem"
 from typing import List
 
 

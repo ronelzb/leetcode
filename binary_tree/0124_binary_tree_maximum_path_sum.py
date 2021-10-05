@@ -1,7 +1,9 @@
 # https://leetcode.com/problems/binary-tree-maximum-path-sum/
-# Great explanation at:
+# Tags: #dp, #binary_tree, #dfs
+#
+# Solution: Recursion stack
 # https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/603423/Python-Recursion-stack-thinking-process-diagram
-# Definition for a binary tree node.
+# Time complexity: O(n), Space complexity: O(n).
 class TreeNode:
     def __init__(self, val=0):
         self.val = val

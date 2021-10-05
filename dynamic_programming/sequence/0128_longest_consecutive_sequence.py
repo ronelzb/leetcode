@@ -1,9 +1,34 @@
 # https://leetcode.com/problems/longest-consecutive-sequence/
+# array, #hash_table, #union_find
+#
+# Solution 2: One pass
+# Sort the array and traverse through the array checking the longest streak at each index
+# Time complexity: O(n*log(n)), Space complexity: O(1)
+#
+# Solution 2: Dictionary sequence building
+# Keep track of the sequence length and store that in the boundary points of the sequence.
+# Time complexity: O(n), Space complexity: O(n)
 from typing import List
 
 
 class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
+    def longestConsecutive_onePass(self, nums: List[int]) -> int:
+        n = len(nums)
+        if n == 0: return 0
+        nums.sort()
+        current, longest = 1, 1
+
+        for i in range(1, n):
+            if nums[i] != nums[i - 1]:
+                if nums[i] == nums[i - 1] + 1:
+                    current += 1
+                else:
+                    longest = max(longest, current)
+                    current = 1
+
+        return max(longest, current)
+
+    def longestConsecutive_dict(self, nums: List[int]) -> int:
         longest_sequence = 0
         nums_set = set()
 
