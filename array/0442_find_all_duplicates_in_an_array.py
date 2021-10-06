@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/find-all-duplicates-in-an-array/
-# tags: #array
+# tags: #array, #hash_table
 #
 # Solution 2: Re arrange numbers
 # https://leetcode.com/problems/find-all-duplicates-in-an-array/discuss/775738/Python-2-solutions-with-O(n)-timeO(1)-space-explained
