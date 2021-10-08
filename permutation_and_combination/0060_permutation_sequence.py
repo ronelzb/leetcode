@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/permutation-sequence/
-# tags: #dfs, #backtracking, #math, #recursion
+# tags: #dfs, #backtracking, #math, #microsoft, #recursion
 #
 # Solution 1: Backtracking
 # Time Complexity: O(n*n!), Space complexity: O(n!)

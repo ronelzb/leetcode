@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/permutations/
-# tags: #array, #backtracking, #dfs
+# tags: #array, #backtracking, #dfs, #microsoft
 #
 # Classic backtracking problem.
 # Permute n numbers, we can add the nth number into the resulting weave list from the n-1 numbers,

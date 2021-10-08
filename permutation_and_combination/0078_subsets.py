@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/subsets/
-# tags: #array, #backtracking, #dfs
+# tags: #array, #backtracking, #dfs, #microsoft
 #
 # We can simply use backtracking to solve this problem
 # The only catch is to append to the unique set the current weave at the beginning of each backtracking call
