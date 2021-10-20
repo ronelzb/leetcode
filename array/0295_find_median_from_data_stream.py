@@ -1,4 +1,17 @@
 # https://leetcode.com/problems/find-median-from-data-stream/
+# tags: #facebook, #heap, #sorting, #two_pointers
+#
+# Solution 1: Sorting -> Built-in Sorting
+# Sort Insert any incoming number using binary search
+# Find the median based on the odd/even half logic
+# Time complexity: O(log(n)), Space complexity: O(n)
+#
+# Solution 2: Two heap
+# Make two heaps one that stores the largest element found and the other the smallest
+# Then, at insertion time pushpop the input num and directly insert the popped negative element into smallest
+# In order to keep both heaps consistent check if largest length is less than smallest and pass the residual to largest
+# To find the median check if both heaps length are the same if not then get largest peek.
+# Time complexity: O(log(n)), Space complexity: O(n)
 import bisect
 from heapq import heappush, heappushpop, heappop
 
