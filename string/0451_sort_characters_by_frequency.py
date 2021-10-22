@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/sort-characters-by-frequency/
-# tags: #hash_table, #string
+# tags: #bucket_sort, #counting, #hash_table, #heap, #sorting, #string
 #
 # Solution: Using Counter to store each character and its frequency
 # Time Complexity: O(n*log(m)), Space complexity: O(n)
