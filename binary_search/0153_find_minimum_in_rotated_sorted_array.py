@@ -1,6 +1,11 @@
 # https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+# tags: #array, #binary_search
+#
 # Great explanation at:
 # https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/discuss/158940/Beat-100%3A-Very-Simple-(Python)-Very-Detailed-Explanation
+#
+# Solution: Binary Search
+# Time complexity: O(log(n)), Space complexity: O(1)
 from typing import List
 
 
