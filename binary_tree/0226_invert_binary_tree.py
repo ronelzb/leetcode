@@ -1,4 +1,8 @@
 # https://leetcode.com/problems/invert-binary-tree/
+# tags: #binary_tree, #bfs, #dfs, #microsoft
+#
+# Solution: Recursion DFS
+# Time Complexity: O(n), Space complexity: O(n)
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
