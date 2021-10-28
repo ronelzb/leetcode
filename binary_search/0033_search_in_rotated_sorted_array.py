@@ -30,7 +30,7 @@ class Solution:
                 else:
                     left = middle + 1
 
-        return - 1
+        return -1
 
 
 if __name__ == "__main__":
