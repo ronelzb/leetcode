@@ -1,8 +1,9 @@
-# LeetCode exercises
+ LeetCode exercises
 Personal repository for data structures and algorithm solutions in LeetCode.
 
 ### Recommended problem lists
 * [Blind 75 Must Do](https://leetcode.com/list/xi4ci4ig/)
+* Facebook Recruiting Portal training
 
 ### Table of Contents
 * [array](https://github.com/ronelzb/leetcode/tree/master/array)
@@ -45,6 +46,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [50. pow x n](https://github.com/ronelzb/leetcode/tree/master/binary_search/0050_pow_x_n.py)
     * [69. sqrt x](https://github.com/ronelzb/leetcode/tree/master/binary_search/0069_sqrt_x.py)
     * [74. search a 2d matrix](https://github.com/ronelzb/leetcode/tree/master/binary_search/0074_search_a_2d_matrix.py)
+    * [81. search in rotated array ii](https://github.com/ronelzb/leetcode/tree/master/binary_search/0081_search_in_rotated_array_ii.py)
     * [153. find minimum in rotated sorted array](https://github.com/ronelzb/leetcode/tree/master/binary_search/0153_find_minimum_in_rotated_sorted_array.py)
     * [154. find minimum in rotated sorted array ii](https://github.com/ronelzb/leetcode/tree/master/binary_search/0154_find_minimum_in_rotated_sorted_array_ii.py)
     * [1011. capacity to ship packages within d days](https://github.com/ronelzb/leetcode/tree/master/binary_search/1011_capacity_to_ship_packages_within_d_days.py)
@@ -108,6 +110,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [489. robot room cleaner](https://github.com/ronelzb/leetcode/tree/master/graph_search/0489_robot_room_cleaner.py)
     * [695. max area of island](https://github.com/ronelzb/leetcode/tree/master/graph_search/0695_max_area_of_island.py)
     * [818. race car](https://github.com/ronelzb/leetcode/tree/master/graph_search/0818_race_car.py)
+    * [994. rotting oranges](https://github.com/ronelzb/leetcode/tree/master/graph_search/0994_rotting_oranges.py)
     * [1041. robot bounded in circle](https://github.com/ronelzb/leetcode/tree/master/graph_search/1041_robot_bounded_in_circle.py)
     * [1293. shortest path in a grid with obstacles elimination](https://github.com/ronelzb/leetcode/tree/master/graph_search/1293_shortest_path_in_a_grid_with_obstacles_elimination.py)
     * [882. reachable nodes in subdivided graph](https://github.com/ronelzb/leetcode/tree/master/graph_search/882_reachable_nodes_in_subdivided_graph.py)
@@ -202,6 +205,10 @@ Personal repository for data structures and algorithm solutions in LeetCode.
         * [search](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/search)
             * [one billion users](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/search/one_billion_users.py)
             * [revenue milestones](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/search/revenue_milestones.py)
+        * [sorting](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/sorting)
+            * [balanced split](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/sorting/balanced_split.py)
+        * [stacks](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/stacks)
+            * [balance brackets](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/stacks/balance_brackets.py)
         * [strings](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/strings)
             * [matching pairs](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/strings/matching_pairs.py)
             * [minimum length substrings](https://github.com/ronelzb/leetcode/tree/master/problems/facebook_recruiting_portal/strings/minimum_length_substrings.py)
