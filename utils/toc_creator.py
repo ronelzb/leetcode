@@ -28,7 +28,7 @@ def getFiles(directory: str, output: str = "", level: int = 0) -> List[str]:
 
 exclude = {"venv", "node_modules", ".idea", ".git", ".gitignore", "work_in_progress", "test", "README.md",
            "utils"}
-dirName = "D:\GitHub\leetcode"
+dirName = os.path.dirname(os.getcwd())
 github_repo_branch = "https://github.com/ronelzb/leetcode/tree/master"
 toc_links = []
 files = getFiles(dirName)
