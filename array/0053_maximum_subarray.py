@@ -1,20 +1,22 @@
+# https://leetcode.com/problems/maximum-subarray/
+# tags: #array, #divide_and_conquer, #dp
+#
+# Solution 1: Dynamic Programming
+# Similar to Solution 1, in this case check at each i the max value between current number and the rolling sum
+# Then check the if this new max surpasses global max
+# Time complexity: O(n), Space complexity: O(1)
+#
+# Solution 2: Divide and Conquer
+# The Divide-and-Conquer algorithm breaks nums into two halves and find the maximum sub array sum in them recursively.
+# To handle the case that the maximum sub array spans the two halves we use a linear algorithm:
+# Starting from the middle element and move to both ends (left and right ends), record the maximum sum we have seen.
+# The maximum sum is finally equal to the middle element plus the maximum sum of moving leftwards and
+# the maximum sum of moving rightwards.
+# Time complexity: O(n*log(n)), Space complexity: O(n)
 from typing import List
 
 
 class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
-        current_max, new_max = 0, 0
-
-        for i in range(len(nums)):
-            new_max += nums[i]
-
-            if new_max < 0:
-                new_max = 0
-            elif new_max > current_max:
-                current_max = new_max
-
-        return current_max
-
     def max_sub_array_dp(self, nums: List[int]) -> int:
         current_max, new_max = nums[0], nums[0]
 
