@@ -4,6 +4,9 @@
 # Solution: Recursion stack
 # https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/603423/Python-Recursion-stack-thinking-process-diagram
 # Time complexity: O(n), Space complexity: O(n).
+import sys
+
+
 class TreeNode:
     def __init__(self, val=0):
         self.val = val
@@ -13,7 +16,7 @@ class TreeNode:
 
 class Solution:
     def __init__(self):
-        self.max_path = float("-inf")
+        self.max_path = -(sys.maxsize - 1)
 
     def maxPathSum(self, root: TreeNode) -> int:
         def get_max(node: TreeNode) -> int:
