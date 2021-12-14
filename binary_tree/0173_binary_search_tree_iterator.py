@@ -1,11 +1,14 @@
 # https://leetcode.com/problems/binary-search-tree-iterator/
-# tags: #bst, #iterator, #stack
+# tags: #bst, #facebook, #iterator, #stack
 #
 # Solution: DFS + stack
 # At init time build a stack that will be a list based on bst in-order traversal
 # Then, for next method pop the first element in the list and hasNext method check if stack has any elements left
 # Time complexity: O(n), Space complexity O(n)
-from collections import deque
+#
+# Solution Followup: Generator
+# This solution is based on skipping the stack part using a generator with Python built-in yield.
+# Time complexity: O(n), Space complexity O(h)
 from typing import Optional, List
 
 
@@ -31,6 +34,32 @@ class BSTIterator:
         return len(self.stack) > 0
 
 
+class BSTIteratorGenerator:
+    def __init__(self, root: Optional[TreeNode]):
+        self.current = None
+        self.last = root
+        self.iter = self.iterate(root)
+
+        while self.last and self.last.right:
+            self.last = self.last.right
+
+    def hasNext(self):
+        return self.current is not self.last
+
+    def next(self):
+        return next(self.iter)
+
+    def iterate(self, node: Optional[TreeNode]):
+        if node is None:
+            return
+        for x in self.iterate(node.left):
+            yield x
+        self.current = node
+        yield node.val
+        for x in self.iterate(node.right):
+            yield x
+
+
 if __name__ == "__main__":
     t1 = TreeNode(7)
     t1.left = TreeNode(3)
@@ -38,7 +67,7 @@ if __name__ == "__main__":
     t1.right.left = TreeNode(9)
     t1.right.right = TreeNode(20)
 
-    bst_iter = BSTIterator(t1)
+    bst_iter = BSTIteratorGenerator(t1)
     print(bst_iter.next())  # 3
     print(bst_iter.next())  # 7
     print(bst_iter.hasNext())  # True
