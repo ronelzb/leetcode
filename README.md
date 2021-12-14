@@ -321,6 +321,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [32. longest valid parentheses](https://github.com/ronelzb/leetcode/tree/master/stack/0032_longest_valid_parentheses.py)
     * [84. largest rectangle in histogram](https://github.com/ronelzb/leetcode/tree/master/stack/0084_largest_rectangle_in_histogram.py)
     * [150. evaluate reverse polish notation](https://github.com/ronelzb/leetcode/tree/master/stack/0150_evaluate_reverse_polish_notation.py)
+    * [224. basic calculator](https://github.com/ronelzb/leetcode/tree/master/stack/0224_basic_calculator.py)
     * [232. implement queue using stacks](https://github.com/ronelzb/leetcode/tree/master/stack/0232_implement_queue_using_stacks.py)
     * [394. decode strings](https://github.com/ronelzb/leetcode/tree/master/stack/0394_decode_strings.py)
 * [string](https://github.com/ronelzb/leetcode/tree/master/string)
