@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/simplify-path/
-# tags: #stack
+# tags: #facebook, #stack
 #
 # Solution: Stack
 # Push to the stack every valid file name (not in {"","."})
