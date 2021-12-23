@@ -1,16 +1,20 @@
-# https://leetcode.com/problems/course-schedule-ii/
+# link: https://leetcode.com/problems/course-schedule-ii/
+# tags: #bfs, #dfs, #topological_sort
+#
+# Solution: BFS (Algorithm based on problem 4.7 on Cracking the Interview Code book)
+# Idea: Build a dependency tree and the set of courses on a list by the num of courses
+# The dependency tree intersected with the current available courses will dictate if the course
+# does not have any dependency left thus is available to be added.
+# When the course if added we remove it from the set of available courses.
+# Time complexity: O(V + E) V: numCourses, E: len(prerequisites), Space complexity: O(V + E)
+#
+# Other solutions:
+# Also, Kahn's algorithm can be applied as a solution
+# Another idea is to read about topological sort and make a variant of it.
 from typing import List
 
 
 class Solution:
-    # Algorithm based on problem 4.7 on Cracking the Interview Code book
-    # Also, Kahn's algorithm can be applied as a solution
-    # Another idea is to read about topological sort and make a variant of it
-    # Idea: Build a dependency tree and the set of courses on a list by the num of courses
-    # The dependency tree intersected with the current available courses will dictate if the course
-    # does not have any dependency left thus is available to be added.
-    # When the course if added we remove it from the set of available courses.
-    # Time complexity: O(V + E) V: numCourses, E: len(prerequisites), Space complexity: O(V + E)
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         if numCourses == 1:
             return [0]
