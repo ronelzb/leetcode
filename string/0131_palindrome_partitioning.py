@@ -1,14 +1,17 @@
 # https://leetcode.com/problems/palindrome-partitioning/
+# tags: #backtracking, #dp, #string
+#
+# Solution: Backtracking
+# Idea: Make a backtracking (dfs) variation.
+# At each iteration validate if the current substring is a palindrome using a dp matrix
+# If we use a 2d array to keep track of any string we have scanned so far, with an addition pair,
+# we can determine whether it's palindrome or not by looking at that pair
+# e.g: For 'abca', a (first) == a (last) and b != c then continue
+# Time complexity: O(n^2+2^n), Space complexity: O(n^2)
 from typing import List
 
 
 class Solution:
-    # Idea: Make a backtracking (dfs) variation.
-    # At each iteration validate if the current substring is a palindrome using a dp matrix
-    # If we use a 2d array to keep track of any string we have scanned so far, with an addition pair,
-    # we can determine whether it's palindrome or not by looking at that pair
-    # e.g: For 'abca', a (first) == a (last) and b != c then continue
-    # Time complexity: n^2+2^n, Space complexity: O(n^2)
     def partition(self, s: str) -> List[List[str]]:
         n = len(s)
         palindromes = []
