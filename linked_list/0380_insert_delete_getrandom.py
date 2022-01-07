@@ -1,12 +1,15 @@
 # https://leetcode.com/problems/insert-delete-getrandom-o1/
-import random
-
-
-# We can think of using set + list and we will get the desired time complexity when getting the random
+# tags: #array, #hash_table, #math, #randomized
+#
+# Solution: Dictionary + randomize
+# We can think of using set + list, and we will get the desired time complexity when getting the random
 # BUT it's impossible to remove an item in O(1) in this manner, to solve this issue we use a dictionary instead.
 # Where the dictionary will store as value the current val's index in the list and when performing the removal
 # swap last item index with removed val
 # Time complexity: average O(1), Space complexity: O(2 * n) => O(n)
+import random
+
+
 class RandomizedSet:
 
     def __init__(self):
