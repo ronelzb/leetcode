@@ -4,12 +4,12 @@
 # Solution 1: Using dictionary
 # Create one dictionary to get the counter of incoming trusts, the judge will be trusted by everyone but himself
 # Create a set to the those who trusts anybody else, if somebody trusts someone else then he/she is not the judge
-# Time complexity: O(n), Space complexity O(n)
+# Time complexity: O(t+n) t=len(trust), Space complexity O(n)
 #
 # Solution 2: Using array
 # We can use an array to get the counter of trusts, when a person trusts someone else we increase the trusted counter
 # The judge must have n - 1 trusts
-# Time complexity: O(n), Space complexity O(n)
+# Time complexity: O(t+n) t=len(trust), Space complexity O(n)
 from typing import List
 
 
