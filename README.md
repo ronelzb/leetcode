@@ -152,7 +152,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [785. is graph bipartite](https://github.com/ronelzb/leetcode/tree/master/graph_search/0785_is_graph_bipartite.py)
     * [797. all paths from source to target](https://github.com/ronelzb/leetcode/tree/master/graph_search/0797_all_paths_from_source_to_target.py)
     * [818. race car](https://github.com/ronelzb/leetcode/tree/master/graph_search/0818_race_car.py)
-    * [952. largest components size by common factor](https://github.com/ronelzb/leetcode/tree/master/graph_search/0952_largest_components_size_by_common factor.py)
+    * [952. largest components size by common factor](https://github.com/ronelzb/leetcode/tree/master/graph_search/0952_largest_components_size_by_common_factor.py)
     * [994. rotting oranges](https://github.com/ronelzb/leetcode/tree/master/graph_search/0994_rotting_oranges.py)
     * [997. find the town judge](https://github.com/ronelzb/leetcode/tree/master/graph_search/0997_find_the_town_judge.py)
     * [1041. robot bounded in circle](https://github.com/ronelzb/leetcode/tree/master/graph_search/1041_robot_bounded_in_circle.py)
