@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/design-add-and-search-words-data-structure/
-# tags: #dfs, #string, #trie
+# tags: #amazon, #dfs, #string, #trie
 #
 # Solution: Trie
 # Classical trie problem with a little variation: search for wildcards
