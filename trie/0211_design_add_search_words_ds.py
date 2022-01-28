@@ -1,4 +1,16 @@
 # https://leetcode.com/problems/design-add-and-search-words-data-structure/
+# tags: #dfs, #string, #trie
+#
+# Solution: Trie
+# Classical trie problem with a little variation: search for wildcards
+# For the init and addWord methods we just instantiate the trie and populate it using dfs
+# When searching we use dfs as well checking if the current character is a wildcard
+# In the case is a wildcard we need to search all the children found for the current node
+# The base case is when we reach the end of a word i == len(word) then we check if an end of word is found
+# Time complexity:
+# * O(n) if word to search contains wildcards "."
+# * O(h) when word only contains alphanum
+# Space complexity: O(n) n=sum(len(words))
 class WordDictionary:
     def __init__(self):
         """
