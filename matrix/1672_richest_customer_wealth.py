@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/richest-customer-wealth/
-# tags:
+# tags: #array, #matrix
 #
 # Solution: Python built-in methods
 # Use sum and max methods to get each row sum and then retrieve the max value between rows
