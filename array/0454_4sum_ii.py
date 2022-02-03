@@ -1,11 +1,14 @@
 # https://leetcode.com/problems/4sum-ii/
+# tags: #array, #hash_table
+#
+# Solution: Dictionary
+# Idea: a + b + c + d == 0 => a + b == - c - d
+# Time complexity: O(n^2), Space complexity: O(n)
 from collections import defaultdict
 from typing import List
 
 
 class Solution:
-    # Idea: a + b + c + d == 0 => a + b == - c - d
-    # Time complexity: O(n**2), space: O(a + b)
     def fourSumCount(self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]) -> int:
         sum_ab = defaultdict(int)
         count = 0
