@@ -1,4 +1,9 @@
 # https://leetcode.com/problems/reverse-string/
+# tags: #recursion, #string, #top_interview_questions, #two_pointers
+#
+# Solution: Iteration
+# Traverse the string from start to the middle, swapping current index with the opposite index (len(string) - index - 1)
+# Time complexity: O(n), Space complexity: O(1)
 from typing import List
 
 
