@@ -3,6 +3,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
 
 ### Recommended problem lists
 * [Blind 75 Must Do](https://leetcode.com/list/xi4ci4ig/)
+* [Top Interview Question](https://medium.com/@koheiarai94/60-leetcode-questions-to-prepare-for-coding-interview-8abbb6af589e), also you can look at the list directly in LeetCode
 * Facebook Recruiting Portal training
 
 ### Table of Contents
@@ -345,7 +346,6 @@ Personal repository for data structures and algorithm solutions in LeetCode.
         * [289. game of life](https://github.com/ronelzb/leetcode/tree/master/problems/top_interview_questions/0289_game_of_life.py)
         * [328. odd even linked list](https://github.com/ronelzb/leetcode/tree/master/problems/top_interview_questions/0328_odd_even_linked_list.py)
         * [341. flatten nest list iterator](https://github.com/ronelzb/leetcode/tree/master/problems/top_interview_questions/0341_flatten_nest_list_iterator.py)
-        * [344. reverse string](https://github.com/ronelzb/leetcode/tree/master/problems/top_interview_questions/0344_reverse_string.py)
         * [378. kth smallest element in a sorted matrix](https://github.com/ronelzb/leetcode/tree/master/problems/top_interview_questions/0378_kth_smallest_element_in_a_sorted_matrix.py)
         * [384. shuffle an array](https://github.com/ronelzb/leetcode/tree/master/problems/top_interview_questions/0384_shuffle_an_array.py)
         * [395. longest substring at least k repeating characters](https://github.com/ronelzb/leetcode/tree/master/problems/top_interview_questions/0395_longest_substring_at_least_k_repeating_characters.py)
@@ -388,11 +388,14 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [140. word break ii](https://github.com/ronelzb/leetcode/tree/master/string/0140_word_break_ii.py)
     * [171. excel sheet column number](https://github.com/ronelzb/leetcode/tree/master/string/0171_excel_sheet_column_number.py)
     * [290. word pattern](https://github.com/ronelzb/leetcode/tree/master/string/0290_word_pattern.py)
+    * [344. reverse string](https://github.com/ronelzb/leetcode/tree/master/string/0344_reverse_string.py)
     * [389. find the difference](https://github.com/ronelzb/leetcode/tree/master/string/0389_find_the_difference.py)
     * [394. decode string](https://github.com/ronelzb/leetcode/tree/master/string/0394_decode_string.py)
+    * [412. fizz buzz](https://github.com/ronelzb/leetcode/tree/master/string/0412_fizz_buzz.py)
     * [438. find all anagrams in a string](https://github.com/ronelzb/leetcode/tree/master/string/0438_find_all_anagrams_in_a_string.py)
     * [451. sort characters by frequency](https://github.com/ronelzb/leetcode/tree/master/string/0451_sort_characters_by_frequency.py)
     * [520. detect capital](https://github.com/ronelzb/leetcode/tree/master/string/0520_detect_capital.py)
+    * [567. permutation in string](https://github.com/ronelzb/leetcode/tree/master/string/0567_permutation_in_string.py)
     * [680. valid palindrome ii](https://github.com/ronelzb/leetcode/tree/master/string/0680_valid_palindrome_ii.py)
     * [763. partition labels](https://github.com/ronelzb/leetcode/tree/master/string/0763_partition_labels.py)
     * [809. expressive words](https://github.com/ronelzb/leetcode/tree/master/string/0809_expressive_words.py)
