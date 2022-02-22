@@ -1,9 +1,9 @@
 # https://leetcode.com/problems/excel-sheet-column-number/
-# tags: #math, #numbers, #string
+# tags: #math, #numbers, #string, #top_interview_questions
 #
-# We iterate through the chars in the input and we want to take whatever is stored in res already,
+# Solution: Map/Reduce
+# We iterate through the chars in the input, and we want to take whatever is stored in res already,
 # multiply it by 26.
-#
 # Time complexity: O(n), Space complexity: O(n)
 from functools import reduce
 

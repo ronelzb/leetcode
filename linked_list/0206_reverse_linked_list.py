@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/reverse-linked-list/
+# tags: #blind_75_must_do, #linked_list, #recursion, #top_interview_questions
+#
+# Solution: In-place iterative
+# Graphical explanation at:
+# https://leetcode.com/problems/reverse-linked-list/discuss/1449712/Easy-C%2B%2BJavaPythonJavaScript-Explained%2BAnimated
+# Time complexity: O(n), Space complexity: O(1)
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
