@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/delete-node-in-a-linked-list/
-# tags: #linked_list
+# tags: #linked_list, #top_interview_questions
 #
 # Solution: Node swap with next node
 # Change the value of node with value of next node and then change next element for next of next element
