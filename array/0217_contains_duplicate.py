@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/contains-duplicate/
-# tags: #array, #hash_table, #sorting
+# tags: #array, #hash_table, #sorting, #top_interview_questions
 #
 # Solution 1: Dictionary
 # Compare if the input array length it's the same as its set counterpart

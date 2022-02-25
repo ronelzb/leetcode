@@ -1,11 +1,11 @@
 # https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-# tags: #array, #binary_tree, #bst, #divide_and_conquer
+# tags: #array, #binary_tree, #bst, #divide_and_conquer, #top_interview_questions
 #
 # In this problem there are two possible approaches:
 # 1. Preorder Traversal: Always Choose Left Middle Node as a Root
 # 2. Preorder Traversal: Always Choose Right Middle Node as a Root
 #
-# My approach is the first where:
+# Solution: DFS
 # int p = (left + right) / 2;
 # root = p
 # root.left = [left, m-1]
