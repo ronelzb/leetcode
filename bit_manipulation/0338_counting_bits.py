@@ -1,9 +1,19 @@
 # https://leetcode.com/problems/counting-bits/
+# tags: #bit_manipulation, #blind_75_must_do, #dynamic_programming
+#
+# Solution 1: Count ones
+# Count the ones at each number in the range given
+# Time complexity: O(n*log(n)), O(n)
+#
+# Solution 2: Count ones optimized
+# Explanation: https://leetcode.com/problems/counting-bits/discuss/657594/Python-3-today's-one-liner
+# Consider a number n with x bits.
+# Then 2 * n also has x bits (it's the same number shifted to the left by 1), and 2 * n + 1 has x + 1 bits.
+# Time complexity: O(n), O(n)
 from typing import List
 
 
 class Solution:
-    # O(n log(n))
     def countBits(self, n: int) -> List[int]:
         ans = [0] * (n + 1)
 
@@ -18,10 +28,6 @@ class Solution:
 
         return ans
 
-    # O(n)
-    # Explanation: https://leetcode.com/problems/counting-bits/discuss/657594/Python-3-today's-one-liner
-    # Consider a number n with x bits.
-    # Then 2 * n also has x bits (it's the same number shifted to the left by 1), and 2 * n + 1 has x + 1 bits.
     def countBits_optimized(self, n: int) -> List[int]:
         ans = [0] * (n + 1)
 
