@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/maximum-subarray/
-# tags: #array, #divide_and_conquer, #dp
+# tags: #array, #divide_and_conquer, #dp, #top_interview_questions
 #
 # Solution 1: Dynamic Programming
 # Similar to Solution 1, in this case check at each i the max value between current number and the rolling sum

@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/pascals-triangle/
-# tags: #dp
+# tags: #dp, #top_interview_questions
 #
 # Solution: Dynamic Programming
 # Any row can be constructed using the offset sum of the previous row.

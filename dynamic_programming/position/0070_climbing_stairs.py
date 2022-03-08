@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/climbing-stairs/
-# tags: #dp, #math
+# tags: #dp, #math, #top_interview_questions
 #
 # Solution 1: Recursion with memoization
 # Time complexity: O(n), Space complexity: O(n)

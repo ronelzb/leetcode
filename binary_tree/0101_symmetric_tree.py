@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/symmetric-tree/
-# tags: #bfs, #binary_tree, #dfs
+# tags: #bfs, #binary_tree, #dfs, #top_interview_questions
 #
 # Solution: DFS (Recursion)
 # In the dfs approach check if the tree is well-formed,
