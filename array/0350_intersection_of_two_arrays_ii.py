@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/intersection-of-two-arrays-ii/
-# tags: #array, #binary_search, #hash_table, #sorting, #two_pointers
+# tags: #array, #binary_search, #hash_table, #sorting, #top_interview_questions, #two_pointers
 #
 # Solution 1: Counters intersection
 # In Python we can leverage of Counter data structure and list comprehension technique

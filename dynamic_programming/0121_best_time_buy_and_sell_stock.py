@@ -1,18 +1,18 @@
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-# tags: #array, #dp
+# tags: #array, #dp, #top_interview_questions
 #
 # Solution: Dynamic Programming
 # At each price: Find min price after finding max profit
 # Time complexity: O(n), Space complexity: O(1)
 #
 # Variant Solution: Kadane's Algorithm "max subarray problem"
+import sys
 from typing import List
 
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        profit = 0
-        min_price = float("inf")
+        profit, min_price = 0, sys.maxsize
 
         for price in prices:
             profit = max(price - min_price, profit)
