@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-# tags: #array, #two_pointers
+# tags: #array, #two_pointers, #top_interview_questions
 #
 # Solution: Two pointers
 # Have a slow and fast pointers, when nums[slow] != nums[fast] then we change slow + 1 (next number) in-place

@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/plus-one/
-# tags: #array, #math
+# tags: #array, #math, #top_interview_questions
 #
 # Solution 1: Carry from right to left
 # Time Complexity: O(n), Space complexity: O(1)
