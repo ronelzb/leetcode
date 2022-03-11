@@ -1,8 +1,8 @@
 # https://leetcode.com/problems/valid-parentheses/
-# tags: #stack, #string
+# tags: #stack, #string, #top_interview_questions
 #
-# Basic usage for stack implementation, also added brackets dictionary to maintain the code clean
-#
+# Solution: Stack
+# Basic usage for stack implementation, also added bracket's dictionary to maintain the code clean
 # Time complexity: O(n), Space complexity: O(n)
 from collections import deque
 
@@ -13,13 +13,13 @@ class Solution:
         brackets = {"(": ")", "{": "}", "[": "]"}
 
         for c in s:
-            if c == "(" or c == "[" or c == "{":
+            if c in ("(", "{", "["):
                 stack.append(c)
             else:
-                if len(stack) == 0 or brackets[stack.pop()] != c:
+                if not stack or brackets[stack.pop()] != c:
                     return False
 
-        return len(stack) == 0
+        return not stack
 
 
 if __name__ == "__main__":

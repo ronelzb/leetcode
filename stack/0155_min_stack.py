@@ -1,12 +1,17 @@
+# https://leetcode.com/problems/min-stack/
+# tags: #design, #must_do_easy_questions, #stack, #top_interview_questions
+#
+# Solution: Stack + Dictionary
+# This solution can be done with a tuple as well, we just need a way to store the current value along with the min
+# at each stack item
+# Time complexity: O(n), Space complexity O(n)
 class MinStack:
     def __init__(self):
         self.stack = []
         self.size = 0
 
     def push(self, val: int) -> None:
-        if not self.stack:
-            self.stack.append({"value": val, "min": val})
-        elif self.stack[-1]["min"] > val:
+        if self.size == 0 or val < self.stack[-1]["min"]:
             self.stack.append({"value": val, "min": val})
         else:
             self.stack.append({"value": val, "min": self.stack[-1]["min"]})
@@ -24,7 +29,9 @@ class MinStack:
         return None
 
     def getMin(self) -> int:
-        return self.stack[-1]["min"]
+        if self.size > 0:
+            return self.stack[-1]["min"]
+        return None
 
 
 if __name__ == "__main__":

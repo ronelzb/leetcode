@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/linked-list-cycle/
-# tags: #blind_75_must_do, #hash_table, #linked_list, #two_pointers
+# tags: #blind_75_must_do, #hash_table, #linked_list, #two_pointers, #top_interview_questions
 #
 # Solution: Two pointers
 # Classical tortoise and hare algorithm to try to identify if there is a cycle when slow == fast
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     h.next.next.next = ListNode(-4)
     h.next.next.next.next = h.next
 
-    assert sol.hasCycle(head=h)
+    print(sol.hasCycle(head=h))  # True
 
     h = ListNode(1)
-    assert not sol.hasCycle(head=h)
+    print(sol.hasCycle(head=h))  # False

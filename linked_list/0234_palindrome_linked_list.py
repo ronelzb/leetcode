@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/palindrome-linked-list/
-# tags: #recursion, #stack, #two_pointers
+# tags: #recursion, #stack, #two_pointers, #top_interview_questions
 #
 # Solution 1: Stack
 # Find the middle node using a slow and fast pointer traversal to the linked list
