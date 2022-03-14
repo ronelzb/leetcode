@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/implement-strstr/
-# tags: #string, #two_pointers
+# tags: #string, #two_pointers, #top_interview_questions
 #
 # Solution 1: Two pointers (Naive)
 # For each index in m - n we try to find a match with needle

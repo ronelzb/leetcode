@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/longest-common-prefix/
-# tags: #string
+# tags: #string, #top_interview_questions
 #
 # Solution: Vertical scanning
 # Time Complexity: O(n*m) m=min of strings, Space complexity: O(m)

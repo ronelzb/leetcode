@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/sqrtx/
-# tags: #binary_search, #math
+# tags: #binary_search, #math, #top_interview_questions
 #
 # There are 2 possible solutions for this problem:
 # Solution 1: Using only integer division for the Newton method

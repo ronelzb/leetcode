@@ -1,3 +1,12 @@
+# https://leetcode.com/problems/intersection-of-two-linked-lists/
+# tags: #must_do_easy_questions, #top_interview_questions
+#
+# Solution: Length difference
+# Calculate lengths of both lists and evaluate difference.
+# Make this number of steps for the longest list, pointer p1 and pointer p2 put to start of short list.
+# Move pointers p1 and p2 one by one until we have the same value:
+# it will be either common element or it will be None element.
+# Time complexity: O(m + n), Space complexity: O(1)
 class ListNode:
     def __init__(self, x):
         self.val = x
