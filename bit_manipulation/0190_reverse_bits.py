@@ -1,4 +1,14 @@
 # https://leetcode.com/problems/reverse-bits/
+# tags: #blind_75_must_do, #top_interview_questions
+#
+# Solution 1: Bit manipulation
+# Traverse all 32 integer bits, if we find that a bit is present allocate it reverse in the result (1 << (31 - i))
+# Time complexity: O(1), Space complexity: O(1)
+#
+# Solution 2: Python built-in
+# Use Python bin method to convert the number into a binary string
+# Return the reversed representation of the number in binary
+# Time complexity: O(1), Space complexity: O(1)
 class Solution:
     def reverseBits(self, n: int) -> int:
         result = 0

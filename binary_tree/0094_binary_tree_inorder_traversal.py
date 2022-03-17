@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/binary-tree-inorder-traversal/
-# tags: #binary_tree, #dfs, #stack, #tree
+# tags: #binary_tree, #dfs, #stack, #top_interview_questions, #tree
 #
 # Both solutions use dfs for traversal
 # First solution is recursive, second is iterative using stack

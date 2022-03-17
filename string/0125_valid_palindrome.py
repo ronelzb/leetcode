@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/valid-palindrome/
-# tags: #string, #two_pointers
+# tags: #string, #two_pointers, #top_interview_questions
 #
 # Solution: Two pointers
 # Move 2 pointers from each end until they collide.

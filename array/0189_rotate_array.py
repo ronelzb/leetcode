@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/rotate-array/description/
-# tags: #array, #math, #two_pointers
+# tags: #array, #math, #two_pointers, #top_interview_questions
 #
 # Solution 1: 3-step array rotation
 # Let's use the example nums = [1,2,3,4,5,6,7], k = 3

@@ -1,14 +1,14 @@
 # https://leetcode.com/problems/reverse-integer/
-# tags: #math
+# tags: #math, #top_interview_questions
 #
 # Solution 1: Using modulo
-# Time Complexity: O(k) k=integer length, Space complexity: O(k)
+# Time Complexity: O(k) k=integer length, Space complexity: O(1)
 #
 # Solution 2: Int -> str -> int
 # Time Complexity: O(k), Space complexity: O(k)
 #
 # Solution 3: Recursion
-# Time complexity: O(k), Space complexity: O(k) k=recursion stack trace for each digit in number
+# Time complexity: O(k), Space complexity: O(h) h=recursion stack trace for each digit in number
 class Solution:
     def reverse_modulo(self, x: int) -> int:
         is_negative = x < 0
