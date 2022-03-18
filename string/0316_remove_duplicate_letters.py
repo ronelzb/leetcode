@@ -13,6 +13,7 @@
 # Time complexity: O(n), Space complexity: O(26) => O(1)
 from collections import deque
 
+
 class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
         last_occurrences = {c: i for i, c in enumerate(s)}
