@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/invert-binary-tree/
-# tags: #binary_tree, #bfs, #dfs, #microsoft
+# tags: #binary_tree, #bfs, #dfs, #microsoft, #must_do_easy_questions
 #
 # Solution: Recursion DFS
 # Time Complexity: O(n), Space complexity: O(n)
