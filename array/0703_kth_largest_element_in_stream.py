@@ -1,3 +1,12 @@
+# https://leetcode.com/problems/kth-largest-element-in-a-stream/
+# tags: #bst, #design, #heap, #must_do_easy_questions, #tree
+#
+# Solution: Heap
+# A min-heap can add and pop the element in log(n) time which is more optimized
+# Our heap should be k size because we need to return kth-largest element
+# We can get min value at O(1)
+# Time complexity: constructor=O((n-k)*log(n)), add=O(log(k))
+# Space complexity: O(n)
 from heapq import heapify, heappop, heappush, heappushpop
 from typing import List
 
