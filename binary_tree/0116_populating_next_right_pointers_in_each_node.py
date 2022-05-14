@@ -1,8 +1,12 @@
 # https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
-from collections import deque
-
-
-# Definition for a Node.
+# tags: #bfs, #dfs, #linked_list
+#
+# Solution: DFS
+# Solution steps:
+# 1. Loop through level 0 to level n - 2
+# 2. Traverse this level and connect children.
+# As we're traversing the children we join right child with current.next left child if it exists
+# Time complexity: 0(n), Space complexity O(1)
 class Node:
     def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
         self.val = val
@@ -15,11 +19,6 @@ class Node:
 
 
 class Solution:
-    # Solution steps:
-    # 1. Loop through level 0 to level n - 2
-    # 2. Traverse this level and connect children.
-    # As we're traversing the children we join right child with current.next left child if it exists
-    # Time complexity: 0(n), Space complexity O(1)
     def connect(self, root: 'Node') -> 'Node':
         prev = root
         while prev is not None and prev.left is not None:
