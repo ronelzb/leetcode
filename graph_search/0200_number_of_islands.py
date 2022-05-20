@@ -1,10 +1,14 @@
 # https://leetcode.com/problems/number-of-islands/
+# tags: #blind_75_must_do, #dfs, #matrix, #top_interview_questions, #union_find
+#
+# Solution: Depth-First search
+# Simple dfs to mark an "island" as seen to count distinct islands in the grid
+# Time complexity: O(m*n), Space complexity: O(m*n)
 from typing import List
 
 
 class Solution:
-    # Solution: Simple dfs to mark an "island" as seen to count distinct islands in the grid
-    # Time complexity: O(m*n), Space complexity: O(m*n)
+
     def numIslands(self, grid: List[List[str]]) -> int:
         m, n = len(grid), len(grid[0])
 
