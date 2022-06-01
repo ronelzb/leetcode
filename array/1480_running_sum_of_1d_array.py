@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/running-sum-of-1d-array/
-# tags: #blind_75_must_do, #dfs, #matrix, #top_interview_questions, #union_find
+# tags: #array, #prefix_sum
 #
 # Solution: Python built-in method
 # There are essentially 2 solutions for this problem:

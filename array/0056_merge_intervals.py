@@ -1,3 +1,10 @@
+# https://leetcode.com/problems/running-sum-of-1d-array/
+# tags: #array, #must_do_easy_questions, #sorting
+#
+# Solution: Sorting
+# The idea here is to first sort by the start of each interval, then for every overlap, we "merge" the intervals.
+# We do this by going in sequential order of each interval rather than the other way around.
+# Time complexity: O(n*log(n)), Space complexity: O(1)
 from typing import List
 
 
