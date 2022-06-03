@@ -5,33 +5,33 @@
 # This solution can be done with a tuple as well, we just need a way to store the current value along with the min
 # at each stack item
 # Time complexity: O(n), Space complexity O(n)
+from collections import deque
+
+
 class MinStack:
     def __init__(self):
-        self.stack = []
+        self.stack = deque()
         self.size = 0
 
     def push(self, val: int) -> None:
-        if self.size == 0 or val < self.stack[-1]["min"]:
-            self.stack.append({"value": val, "min": val})
+        if self.stack:
+            self.stack.append({"min": min(self.stack[-1]["min"], val), "value": val})
         else:
-            self.stack.append({"value": val, "min": self.stack[-1]["min"]})
-
-        self.size += 1
+            self.stack.append({"min": val, "value": val})
 
     def pop(self) -> None:
-        if self.size > 0:
+        if self.stack:
             self.stack.pop()
-            self.size -= 1
 
     def top(self) -> int:
-        if self.size > 0:
+        if self.stack:
             return self.stack[-1]["value"]
-        return None
+        return 0
 
     def getMin(self) -> int:
-        if self.size > 0:
+        if self.stack:
             return self.stack[-1]["min"]
-        return None
+        return 0
 
 
 if __name__ == "__main__":
