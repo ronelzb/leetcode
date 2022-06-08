@@ -145,3 +145,4 @@ test/
 work_in_progress/
 package.json
 package-lock.json
+.DS_Store
