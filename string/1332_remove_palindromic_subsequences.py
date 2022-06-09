@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/break-a-palindrome/
-# tags: #two_pointers, #string
+# tags: #string, #two_pointers
 #
 # Solution: Two pointers
 # Max 2 operations solution:
