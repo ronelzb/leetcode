@@ -1,8 +1,8 @@
-class Node:
+class TreeNode:
     def __init__(self, value, left=None, right=None):
         self.right = right
         self.left = left
-        self.value = value
+        self.val = value
 
         self.parent = None
 
@@ -12,7 +12,7 @@ class Node:
             self.right.parent = self
 
     def __str__(self):
-        return str(self.value)
+        return str(self.val)
 
 
 def traverse_in_order(root):
@@ -38,9 +38,9 @@ if __name__ == '__main__':
     # preorder: 123
     # postorder: 231
 
-    bt = Node(1,
-              Node(2),
-              Node(3))
+    bt = TreeNode(1,
+                  TreeNode(2),
+                  TreeNode(3))
 
     for n in traverse_in_order(bt):
         print(n.value)
