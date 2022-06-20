@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/binary-tree-cameras/://leetcode.com/problems/longest-palindromic-substring/
-# tags: #dfs, #dp, #binary_tree
+# tags: #binary_tree, #dfs, #dp
 #
 # Solution: Depth-first search
 # Each leaf node has only one of two ways it can be monitored:
