@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/two-city-scheduling/
-# tags: #array, greedy, #sorting
+# tags: #array, #greedy, #sorting
 #
 # Solution: Greedy + Sorting
 # The idea here is to sort the input array in a way that we are able to iterate and find each optimal cost locally
