@@ -139,6 +139,8 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [260. single number iii](https://github.com/ronelzb/leetcode/tree/master/array/0260_single_number_iii.py)
     * [239. sliding window maximum](https://github.com/ronelzb/leetcode/tree/master/array/0239_sliding_window_maximum.py)
     * [151. reverse words in a string](https://github.com/ronelzb/leetcode/tree/master/array/0151_reverse_words_in_a_string.py)
+    * [406. queue reconstruction by height](https://github.com/ronelzb/leetcode/tree/master/array/0406_queue_reconstruction_by_height.py)
+    * [462. minimum moves to equal array elements ii](https://github.com/ronelzb/leetcode/tree/master/array/0462_minimum_moves_to_equal_array_elements_ii.py)
 * [binary search](https://github.com/ronelzb/leetcode/tree/master/binary_search)
     * [441. arranging coins](https://github.com/ronelzb/leetcode/tree/master/binary_search/0441_arranging_coins.py)
     * [35. search insert position](https://github.com/ronelzb/leetcode/tree/master/binary_search/0035_search_insert_position.py)
