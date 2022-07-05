@@ -4,7 +4,7 @@ from typing import List
 
 def getFiles(directory: str, output: str = "", level: int = 0) -> List[str]:
     global toc_links
-    dir_files = os.listdir(directory)
+    dir_files = sorted(os.listdir(directory))
     files_full_path = []
 
     for file in dir_files:
