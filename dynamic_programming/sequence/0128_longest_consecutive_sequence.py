@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/longest-consecutive-sequence/
-# array, #hash_table, #union_find
+# #array, #hash_table, #union_find
 #
-# Solution 2: One pass
+# Solution 1: Sort + One pass
 # Sort the array and traverse through the array checking the longest streak at each index
 # Time complexity: O(n*log(n)), Space complexity: O(1)
 #
@@ -30,10 +30,7 @@ class Solution:
 
     def longestConsecutive_dict(self, nums: List[int]) -> int:
         longest_sequence = 0
-        nums_set = set()
-
-        for num in nums:
-            nums_set.add(num)
+        nums_set = {num for num in nums}
 
         while nums_set:
             pivot = nums_set.pop()
@@ -57,5 +54,5 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    assert sol.longestConsecutive(nums=[100, 4, 200, 1, 3, 2]) == 4
-    # assert sol.longestConsecutive(nums=[0, 3, 7, 2, 5, 8, 4, 6, 0, 1]) == 9
+    print(sol.longestConsecutive_dict(nums=[100, 4, 200, 1, 3, 2]))  # 4
+    print(sol.longestConsecutive_dict(nums=[0, 3, 7, 2, 5, 8, 4, 6, 0, 1]))  # 9
