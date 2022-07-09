@@ -1,3 +1,19 @@
+class Node:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.parent = None
+
+        if left:
+            self.left.parent = self
+        if right:
+            self.right.parent = self
+
+    def __str__(self):
+        return str(self.val)
+
+
 class TreeNode:
     def __init__(self, value, left=None, right=None):
         self.right = right
