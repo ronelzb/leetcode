@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
-# tags: #stack, #string
+# tags: #facebook, #stack, #string
 #
 # Solution: Stack
 # In this solution is required to make two passes:
