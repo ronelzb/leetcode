@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/
-# tags: #array, #bfs, #matrix
+# tags: #array, #bfs, #google, #matrix
 #
 # Solution: Breadth-First Search
 # * We are trying to find the shortest path thus we use BFS to exit immediately when a path reaches the
@@ -22,7 +22,6 @@ class Solution:
             if (x, y) == (m - 1, n - 1):
                 return steps
 
-            visited.add((x, y, remaining))
             for i, j in (x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1):
                 if 0 <= i < m and 0 <= j < n and (grid[i][j] == 0 or remaining > 0):
                     new_remaining = remaining - grid[i][j]
