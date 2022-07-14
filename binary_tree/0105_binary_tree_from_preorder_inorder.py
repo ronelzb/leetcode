@@ -27,9 +27,7 @@ class TreeNode:
 
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
-        map_inorder = dict()
-        for i, val in enumerate(inorder):
-            map_inorder[val] = i
+        map_inorder = {val: i for i, val in enumerate(inorder)}
 
         root = None
         stack = deque()
@@ -42,6 +40,7 @@ class Solution:
                 if map_inorder[val] < map_inorder[stack[-1].val]:
                     stack[-1].left = current
                 else:
+                    last_popped = stack[-1]
                     while stack and map_inorder[val] > map_inorder[stack[-1].val]:
                         last_popped = stack.pop()
                     last_popped.right = current
@@ -51,9 +50,7 @@ class Solution:
         return root
 
     def build_tree_recursive(self, preorder: List[int], inorder: List[int]) -> TreeNode:
-        map_inorder = dict()
-        for i, val in enumerate(inorder):
-            map_inorder[val] = i
+        map_inorder = {val: i for i, val in enumerate(inorder)}
         preorder_iter = iter(preorder)
 
         def recursion(start: int, end: int) -> TreeNode:
