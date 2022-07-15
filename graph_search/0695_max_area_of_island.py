@@ -2,7 +2,7 @@
 # tags: #array, #bfs, #dfs, #matrix, #union-find
 #
 # The idea is to count the area of each island using dfs.
-# During the dfs, we set the value of each point in the island to 0 to not count it again
+# During the dfs, we set the value of each point on the island to 0 to not count it again
 #
 # Time complexity : O(m * n)
 # Space complexity: O(L) where L is the size of the largest island, representing the max recursion stack
@@ -12,7 +12,7 @@ from typing import List
 class Solution:
 
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
-        max_area = float("-inf")
+        max_area = 0
         m, n = len(grid), len(grid[0])
 
         def get_area(i: int, j: int) -> int:
@@ -29,7 +29,7 @@ class Solution:
                 if grid[i][j] == 1:
                     max_area = max(max_area, get_area(i, j))
 
-        return max_area if max_area > float("-inf") else 0
+        return max_area
 
 
 if __name__ == "__main__":
