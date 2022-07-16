@@ -1,10 +1,10 @@
 # https://leetcode.com/problems/max-area-of-island/
 # tags: #array, #bfs, #dfs, #matrix, #union-find
 #
+# Solution: DFS
 # The idea is to count the area of each island using dfs.
 # During the dfs, we set the value of each point on the island to 0 to not count it again
-#
-# Time complexity : O(m * n)
+# Time complexity : O(m * n),
 # Space complexity: O(L) where L is the size of the largest island, representing the max recursion stack
 from typing import List
 
