@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/max-area-of-island/
-# tags: #bfs, #binary_tree, #dfs
+# tags: #bfs, #binary_tree, #dfs, #google
 #
 # Solution: LCA + find path (DFS)
 # The first important trick on this solution is to find the lowest common ancestor (LCA) because:
