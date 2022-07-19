@@ -5,7 +5,7 @@
 # Convert each timestamp to its equivalent in minutes and sort the resulting array
 # The required minimum difference must be a difference between two adjacent elements in the circular array,
 # so the last element is "adjacent" to the first.
-# Time complexity: O(n*log(n)), Space complexity: O(1)
+# Time complexity: O(n*log(n)), Space complexity: O(n)
 import sys
 from typing import List
 
