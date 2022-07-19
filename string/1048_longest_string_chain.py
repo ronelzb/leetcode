@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/longest-string-chain/
-# tags: #array, #dp, #hash_table, #string, #two_pointers
+# tags: #array, #dp, #google, #hash_table, #string, #two_pointers
 #
 # Solution: Dynamic Programming
 # For each word in sorted words, loop on all possible previous word with 1 letter missing.
