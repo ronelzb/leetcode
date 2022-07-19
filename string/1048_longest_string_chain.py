@@ -11,18 +11,19 @@ from typing import List
 
 class Solution:
     def longestStrChain(self, words: List[str]) -> int:
-        dp = {}
-        res = 1
+        chains = {}
+        longest_chain = 1
 
         for word in sorted(words, key=len):
-            dp[word] = 1
+            chains[word] = 1
+
             for i in range(len(word)):
                 prev = word[:i] + word[i + 1:]
-                if prev in dp:
-                    dp[word] = dp[prev] + 1
-                    res = max(res, dp[word])
+                if prev in chains:
+                    chains[word] = max(chains[word], chains[prev] + 1)
+                    longest_chain = max(longest_chain, chains[word])
 
-        return res
+        return longest_chain
 
 
 if __name__ == '__main__':
@@ -30,3 +31,4 @@ if __name__ == '__main__':
     print(sol.longestStrChain(words=["a", "b", "ba", "bca", "bda", "bdca"]))  # 4
     print(sol.longestStrChain(words=["xbc", "pcxbcf", "xb", "cxbc", "pcxbc"]))  # 5
     print(sol.longestStrChain(words=["abcd", "dbqca"]))  # 1
+    print(sol.longestStrChain(["c", "cd", "ab", "bcd", "abc", "abcd", "abcde"]))  # 5
