@@ -6,7 +6,6 @@
 # starting from the given location
 # We can use dfs here with the tweak of moving the robot back to the original position
 # As recursive traversal suggests
-#
 # Time complexity: O(m * n), space complexity: (m * n)
 """
     # This is the robot's control interface.
