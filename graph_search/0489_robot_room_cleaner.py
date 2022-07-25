@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/robot-room-cleaner/
 # tags: #backtracking, #dfs, #google, #graph_search
 #
+# Solution: Spiral backtracking
 # The idea here is to cover all the area where the robot can get into (ones in the matrix)
 # starting from the given location
 # We can use dfs here with the tweak of moving the robot back to the original position
@@ -36,13 +37,14 @@ col = 3
 """
 class Solution:
     def cleanRoom(self, robot) -> None:
-        coordinates_cleansed = set(tuple)
-        robot.clean()
+        coordinates_cleansed = set()
 
         # direction is clockwise starting up: 0=up, 1=right, 2=down, 3=left
         def dfs(i, j, direction):
             if (i, j) in coordinates_cleansed:
                 return
+
+            robot.clean()
             coordinates_cleansed.add((i, j))
 
             for i in range(4):
