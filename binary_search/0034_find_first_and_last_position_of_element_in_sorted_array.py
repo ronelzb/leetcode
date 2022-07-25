@@ -9,7 +9,6 @@
 # Eventually, we can optimize our code when finding the result's right boundary (range),
 # instead of searching target, we can search target + 1.
 # Then deduct 1 from the result to get the correct position of right boundary.
-#
 # Time complexity: 2*log(n) => log(n), Space complexity: 0(1)
 from typing import List
 
