@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/find-and-replace-pattern/
-# tags: #array, #hash_map, #string
+# tags: #array, #hash_table, #string
 #
 # Solution: Normalise and compare
 # Based on @lee215 post:
