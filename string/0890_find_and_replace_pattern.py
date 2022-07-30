@@ -6,7 +6,7 @@
 # https://leetcode.com/problems/find-and-replace-pattern/discuss/161288/C%2B%2BJavaPython-Normalise-Word
 # Convert each string to a base pattern and then compare them.
 # Time complexity: O(n*c) n=len(words) c=len(word), Space complexity: O(n*c)
-from collections import Counter, defaultdict
+from collections import defaultdict
 from typing import List
 
 
