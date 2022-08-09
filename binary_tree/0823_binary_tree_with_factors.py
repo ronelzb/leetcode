@@ -8,7 +8,7 @@
 #   and arr[i] // arr[j] which would be the right child of the current node
 #   Then, we can get all the permutations available to add to this node
 # * Return the sum of the values in the dictionary
-# Time complexity: O(n), Space complexity O(1) each stack will never grow beyond 3 elements
+# Time complexity: O(n^2), Space complexity O(n)
 from collections import Counter
 from typing import List
 
