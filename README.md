@@ -138,6 +138,7 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [687. longest univalue path](https://github.com/ronelzb/leetcode/tree/master/binary_tree/0687_longest_univalue_path.py)
     * [700. search in a binary search tree](https://github.com/ronelzb/leetcode/tree/master/binary_tree/0700_search_in_a_binary_search_tree.py)
     * [701. insert into a binary search tree](https://github.com/ronelzb/leetcode/tree/master/binary_tree/0701_insert_into_a_binary_search_tree.py)
+    * [823. binary tree with factors](https://github.com/ronelzb/leetcode/tree/master/binary_tree/0823_binary_tree_with_factors.py)
     * [938. range sum of bst](https://github.com/ronelzb/leetcode/tree/master/binary_tree/0938_range_sum_of_bst.py)
     * [968. binary tree cameras](https://github.com/ronelzb/leetcode/tree/master/binary_tree/0968_binary_tree_cameras.py)
     * [987. vertical order traversal of a binary tree](https://github.com/ronelzb/leetcode/tree/master/binary_tree/0987_vertical_order_traversal_of_a_binary_tree.py)
@@ -479,4 +480,5 @@ Personal repository for data structures and algorithm solutions in LeetCode.
     * [588. design in memory file system](https://github.com/ronelzb/leetcode/tree/master/trie/0588_design_in_memory_file_system.py)
     * [792. number of matching subsequences](https://github.com/ronelzb/leetcode/tree/master/trie/0792_number_of_matching_subsequences.py)
     * [820. short encoding of words](https://github.com/ronelzb/leetcode/tree/master/trie/0820_short_encoding_of_words.py)
+    * [1554. strings differ by one character](https://github.com/ronelzb/leetcode/tree/master/trie/1554_strings_differ_by_one_character.py)
     * [weighted prefix search](https://github.com/ronelzb/leetcode/tree/master/trie/weighted_prefix_search.py)
